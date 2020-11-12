@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url(../fonts/YandexSansText-Regular.ttf);
+}
+.products {
+  padding: 20px 0 20px 12px;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products__slider {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.products__slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.products__slide {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 190px;
+  margin-right: 10px;
+  border-radius: 3px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productsSlide__img-img {
+  width: 100%;
+}
+
+.productsSlide__img {
+  margin-bottom: 12px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EEEEEE;
+  padding: 50px 0;
+  border-radius: 3px;
+}
+
+.productsSlide__star {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.productsSlide__brand {
+  font-family: "Yandex Sans Text", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+.productsSlide__name {
+  font-family: "Yandex Sans Text", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.productsSlide__price {
+  font-family: "Yandex Sans Text", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  display: block;
+}
+
+.products__btn {
+  display: inline-block;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  font-family: "Yandex Sans Text", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  padding: 11px 25px 14px;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=products.css.map */

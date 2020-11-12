@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url(../fonts/YandexSansText-Regular.ttf);
+}
+.categories {
+  padding: 25px 12px 20px;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+}
+
+.categories__instance {
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+}
+
+.categories__btn {
+  display: flex;
+  align-items: center;
+}
+
+.categories__img {
+  width: 40%;
+  background: #EBEBEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categories__img img {
+  width: 100%;
+}
+
+.categories__name {
+  width: 60%;
+  font-family: "Yandex Sans Text", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #000000;
+  margin-left: 22px;
+}
+
+/*# sourceMappingURL=categories.css.map */

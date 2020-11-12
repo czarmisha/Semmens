@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/addToCart/Helvetica.ttf");
+}
+.addToCart {
+  padding: 54px 20px 61px 20px;
+  background-color: #fff;
+  max-width: 414px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addToCart__button {
+  padding: 14px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  color: #222;
+  border: 1px solid #222222;
+  font-family: "Helvetica";
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+.addToCart__button :hover {
+  text-decoration: none;
+  color: #222;
+}
+
+.addToCart__icons__send {
+  margin-right: 20px;
+}
+
+/* =========================  media  ========================== */
+@media (max-width: 350px) {
+  .addToCart__button {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  .addToCart__icons__send {
+    margin-right: 10px;
+  }
+}
+
+/*# sourceMappingURL=addToCart.css.map */

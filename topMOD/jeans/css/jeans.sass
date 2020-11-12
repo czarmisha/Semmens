@@ -1,0 +1,94 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Yandex Sans Text'
+    src: url(../fonts/YandexSansText-Regular.ttf)
+
+
+$font-stack: 'Yandex Sans Text', sans-serif
+
+.jeans
+    padding: 25px 0 15px 12px
+    max-width: 375px
+    display: flex
+    flex-direction: column
+
+.jeans__head
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 15px
+
+.jeans__title
+    font-family: $font-stack
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: #000000
+
+.jeans__see-all-btn
+    font-family: $font-stack
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+    padding-right: 12px
+
+.jeans__slider 
+    width: 100%
+
+.jeans__slides 
+    display: flex
+    overflow-x: auto
+    scroll-snap-type: x mandatory
+    scroll-behavior: smooth
+    -webkit-overflow-scrolling: touch
+
+.jeans__slide 
+    scroll-snap-align: start
+    flex-shrink: 0
+    width: 160px
+    margin-right: 10px
+    border-radius: 3px
+    transform-origin: center center
+    transform: scale(1)
+    transition: transform 0.5s
+    position: relative
+    display: flex
+    flex-direction: column
+
+.jeansSlide__product-img
+    width: 100%
+
+.jeansSlide__like-btn
+    position: absolute
+    right: 10px
+    top: 10px
+    z-index: 5
+
+.jeansSlide__description
+    margin-top: 15px
+
+.jeansSlide__title
+    font-family: $font-stack
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+    margin-bottom: 4px
+
+.jeansSlide__name
+    font-family: $font-stack
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #000000

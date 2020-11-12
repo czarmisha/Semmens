@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tags.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="tags">
+        <li class="tags__item">
+            <a href="" class="tags__btn">
+                <span>Пальто и куртки</span>
+                <img src="images/add.png" alt="">
+            </a>
+        </li>
+        <li class="tags__item">
+            <a href="" class="tags__btn">
+                <span>м</span>
+                <img src="images/add.png" alt="">
+            </a>
+        </li>
+        <li class="tags__item">
+            <a href="" class="tags__btn">
+                <span>ж</span>
+                <img src="images/add.png" alt="">
+            </a>
+        </li>
+        <li class="tags__item">
+            <a href="" class="tags__btn">
+                <span>тест</span>
+                <img src="images/add.png" alt="">
+            </a>
+        </li>
+        <li class="tags__item">
+            <a href="" class="tags__btn">
+                <span>йцукйцу</span>
+                <img src="images/add.png" alt="">
+            </a>
+        </li>
+    </ul>
+
+
+    <script>
+        let btns = document.querySelectorAll('.tags__btn');
+        for (let i = 0; i < btns.length; i++) {
+            const element = btns[i];
+            element.addEventListener('click', function (e) {
+                e.preventDefault();
+                this.classList.toggle('tags__btn_active');
+                this.lastElementChild.src = this.lastElementChild.src.includes('add.png') ?
+                                             'images/delete.png' : 'images/add.png';
+            })
+        }
+    </script>
+</body>
+
+</html>

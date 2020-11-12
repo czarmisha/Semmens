@@ -1,0 +1,72 @@
+*
+    margin: 0
+    padding: 0
+    text-decoration: none
+    list-style: none
+
+@font-face
+    font-family: "Helvetica"
+    src: url("../fonts/Helvetica.ttf")
+
+$font-stack: "Helvetica", sans-serif
+$black-color: #000
+
+.feedback
+    background: #fff
+    padding: 0 10px
+    max-width: 414px
+    padding-bottom: 40px
+
+.feedback__questions
+    padding: 26px 0 20px
+
+.feedback__title
+    font-family: $font-stack
+    font-size: 18px
+    line-height: 21px
+    text-transform: uppercase
+    font-weight: bold
+    color: $black-color
+    margin-bottom: 16px
+
+.feedback__questions-list
+    display: flex
+    flex-wrap: wrap
+
+.feedback__questions-item
+    margin-right: 5px
+    margin-bottom: 8px
+    border-radius: 5px
+    border: 1px solid #7B7B7B
+    font-family: $font-stack
+    font-size: 14px
+    line-height: 16px
+    text-transform: uppercase
+    color: $black-color
+    padding: 8px 12px
+
+.feedback__actions
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.feedback__action
+    flex-basis: 32%
+
+.feedback__action-img
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #EFEFEF
+    height: 105px
+    margin-bottom: 15px
+
+.feedback__action-text
+    font-family: $font-stack
+    font-size: 14px
+    line-height: 16px
+    text-align: center
+    text-transform: uppercase
+    color: #222222
+    display: flex
+    justify-content: center

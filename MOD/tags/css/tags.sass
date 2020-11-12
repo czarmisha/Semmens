@@ -1,0 +1,45 @@
+*
+    margin: 0
+    padding: 0
+    text-decoration: none
+    list-style: none
+
+@font-face
+    font-family: "Helvetica"
+    src: url("../fonts/Helvetica.ttf")
+
+$font-stack: "Helvetica", sans-serif
+$black-color: #000
+
+.tags
+    background: #fff
+    max-width: 414px
+    padding: 25px 0 45px
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+
+.tags__item
+    margin: 0 10px 10px
+
+.tags__btn
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 8px 12px
+    background: #EFEFEF
+    font-family: $font-stack
+    font-size: 14px
+    line-height: 16px
+    font-weight: normal
+    color: #222
+    text-transform: uppercase
+    border-radius: 4px
+    transition: 0.3s
+
+    span
+        margin-right: 15px
+
+.tags__btn_active
+    background: #222
+    color: #fff
