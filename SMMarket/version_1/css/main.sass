@@ -61,7 +61,7 @@
         opacity: 0.35
 
 /* ----------------------- search end --------------------- */
-    /* ----------------------- filters --------------------- */
+/* ----------------------- filters --------------------- */
 .filters 
     width: 100%
     padding: 0 0 20px 16px
@@ -381,7 +381,161 @@
     img
         width: 100%
 /* ------------------ bottom slider end ---------------- */
-    /* ------------------- footer ------------------- */
+/* ------------------- product detail ------------------- */
+.productDetail
+    background: rgba(0, 0, 0, 0.7)
+    backdrop-filter: blur(20px)
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 666
+    height: 100vh
+    width: 100vw
+    transform: translateY(100%)
+    transition: 0.4s
+
+    &.active
+        transform: translateY(0)
+
+.productDetail__content
+    background: #fff
+    border-top-left-radius: 12px
+    border-top-right-radius: 12px
+    min-height: 50%
+    max-height: 100%
+    position: fixed
+    bottom: 0
+    width: 100%
+    padding: 20px 16px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.productDetail__img-wrapper
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 30px
+    margin-bottom: 22px
+
+    img
+        width: 60%
+
+.productDetail__name
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 18px
+    text-align: center
+    color: #838383
+    opacity: 0.87
+    margin-bottom: 12px
+
+.productDetail__description
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    color: #838383
+    opacity: 0.87
+    margin-bottom: 25px
+
+.productDetail__tag
+    position: absolute
+    top: 20px
+    left: 20px
+    background: rgba(73, 73, 73, 0.2)
+    border-radius: 8px
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    text-align: center
+    color: #222
+    opacity: 0.87
+    padding: 6px 10px
+
+.productDetail__like
+    display: block
+    width: 17px
+    height: 20px
+    position: absolute
+    top: 25px
+    right: 20px
+
+.productDetail__footer
+    padding-top: 20px
+    border-top: 1px solid #E5E5E5
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+
+.productDetail__decrease,
+.productDetail__increase
+    background: #EFEFEF
+    border-radius: 8px
+    width: 40px
+    height: 40px
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 18px
+    text-align: center
+    border: none
+    color: rgba(34, 34, 34, 0.87)
+
+    &:focus
+        outline: none
+
+.productDetail__footerLeft
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 135px
+
+.productDetail__footerRight
+    width: 235px
+
+.productDetail__count
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 18px
+    text-align: center
+    color: #222222
+    opacity: 0.87
+
+.productDetail__add
+    background: #FFDA34
+    border-radius: 8px
+    height: 40px
+    padding: 0 14px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    text-align: center
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #222222
+
+    span
+        font-weight: bold
+
+/* ------------------- product detail end ------------------- */
+/* ------------------- footer ------------------- */
 body
     position: relative
     padding-bottom: 65px
@@ -398,6 +552,28 @@ body
     justify-content: space-between
     align-items: center
     border-top: 1px solid #E5E5E5
+
+.footer__item
+    position: relative
+
+.footer__cartCounter
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 14px
+    height: 14px
+    background: #222222
+    color: white
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: normal
+    font-size: 9px
+    line-height: 11px
+    text-align: center
+    border-radius: 50%
+    top: -1px
+    right: 4px
 
 .footer__element
     display: flex

@@ -7,6 +7,30 @@
     <title>Main Page 1</title>
 </head>
 <body>
+    <div class="productDetail">
+        <div class="productDetail__content">
+            <div class="productDetail__img-wrapper">
+                <img src="images/fast-by-1.png" alt="">
+            </div>
+            <p class="productDetail__name">Липом Ламас</p>
+            <p class="productDetail__description">Овальный, желтый, 500г, для чая, </p>
+            <span class="productDetail__tag">Последний</span>
+            <span class="productDetail__like"><img src="images/like.png" alt=""></span>
+            <div class="productDetail__footer">
+                <div class="productDetail__footerLeft">
+                    <button class="productDetail__decrease">-</button>
+                    <span class="productDetail__count">1</span>
+                    <button class="productDetail__increase">+</button>
+                </div>
+                <div class="productDetail__footerRight">
+                    <a href="#" class="productDetail__add">
+                        добавить
+                        <span>23 000 uzs</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="logo">
             <img src="images/logo.png" alt="">
@@ -77,19 +101,19 @@
                         <span class="fastBy_slider__price">
                             13 500 UZS
                         </span>
-                        <a href="#" class="fastBy_slider__btn">купить</a>
+                        <a href="#" class="fastBy_slider__btn showDetail">купить</a>
                     </div>
                     <div class="fastBy_slider__slide">
                         <div class="fastBy_slider__img-wrapper">
                             <img src="images/fast-by-2.png" alt="" class="fastBy_slider__img">
                         </div>
                         <span class="fastBy_slider__description">
-                            Лимон Желтый фыы 500г
+                            Лимон Желтый 500г
                         </span>
                         <span class="fastBy_slider__price">
                             13 500 UZS
                         </span>
-                        <a href="#" class="fastBy_slider__btn">купить</a>
+                        <a href="#" class="fastBy_slider__btn showDetail">купить</a>
                     </div>
                     <div class="fastBy_slider__slide">
                         <div class="fastBy_slider__img-wrapper">
@@ -101,7 +125,7 @@
                         <span class="fastBy_slider__price">
                             13 500 UZS
                         </span>
-                        <a href="#" class="fastBy_slider__btn">купить</a>
+                        <a href="#" class="fastBy_slider__btn showDetail">купить</a>
                     </div>
                     <div class="fastBy_slider__slide">
                         <div class="fastBy_slider__img-wrapper">
@@ -113,7 +137,7 @@
                         <span class="fastBy_slider__price">
                             13 500 UZS
                         </span>
-                        <a href="#" class="fastBy_slider__btn">купить</a>
+                        <a href="#" class="fastBy_slider__btn showDetail">купить</a>
                     </div>
                 </div>
             </div>
@@ -130,7 +154,7 @@
                     <ul class="catTabs__tab catTab active" id="tab-1">
                         <li class="catTab__item">
                             <span class="catTab__img"><img src="images/category-1.png" alt=""></span>
-                            <a href="#" class="catTab__name">Любимые товары</a>
+                            <a href="./products.html" class="catTab__name">Любимые товары</a>
                             <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
                         </li>
                         <li class="catTab__item">
@@ -243,9 +267,11 @@
                     <span class="footer__img footer__cart"></span>
                     <span class="footer__text">Корзина</span>
                 </a>
+                <span class="footer__cartCounter">3</span>
             </li>
         </ul>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/detail.js"></script>
 </body>
 </html>
