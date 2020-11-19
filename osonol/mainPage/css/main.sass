@@ -1,0 +1,247 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Rubik 400'
+    src: url(../fonts/Rubik-Regular.ttf)
+    font-weight: 400
+    font-style: normal
+
+/* ----------------------- search --------------------- */
+.search
+    padding: 0 10px
+    margin: 7px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 414px
+
+.search__form
+    width: 90%
+
+.search__wrapper
+    width: 100%
+    position: relative
+
+    ::before
+        position: absolute
+        left: 10px
+        top: 9px
+        content: ''
+        background: url('../images/Group.png')
+        display: block
+        width: 20px
+        height: 20px
+        z-index: 2
+
+.search__input
+    width: 100%
+    padding: 11px 11px 11px 46px
+    background: #F2F2F2
+    border: none
+    border-radius: 8px
+
+    :focus
+        outline: none
+
+    ::placeholder
+        font-family: 'Rubik 400'
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+        opacity: 0.25
+
+.search__filter-btn
+    width: 10%
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+/* ----------------------- search end --------------------- */
+/* ----------------------- filters --------------------- */
+.filters 
+    width: 100%
+    padding: 0 0 0 10px
+    margin: 7px 0 10px
+    max-width: 414px
+
+.filters__slides 
+    display: flex
+    overflow-x: auto
+    scroll-snap-type: x mandatory
+    scroll-behavior: smooth
+    -webkit-overflow-scrolling: touch
+
+    ::-webkit-scrollbar 
+        display: none
+  
+.filters__slide 
+    scroll-snap-align: start
+    flex-shrink: 0
+    width: auto
+    padding: 8px 11px
+    margin-right: 5px
+    border-radius: 8px
+    transform-origin: center center
+    transform: scale(1)
+    transition: transform 0.5s
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #E2E2E2
+
+.filters__btn
+    font-family: 'Rubik 400'
+    font-size: 12px
+    line-height: 14px
+    color: #222222
+    text-transform: capitalize
+
+    img
+        width: 16px
+        height: 16px
+/* ------------------ filters end ---------------- */
+/* ------------------ main slider ---------------- */
+.mainSlider 
+    max-width: 414px
+    width: 100%
+    margin: 10px 0
+    padding: 0 10px
+    position: relative
+
+.mainSlider__slides 
+    display: flex
+    overflow-x: auto
+    scroll-snap-type: x mandatory
+    scroll-behavior: smooth
+    -webkit-overflow-scrolling: touch
+
+    ::-webkit-scrollbar 
+        display: none
+
+.mainSlider__slide 
+    scroll-snap-align: start
+    flex-shrink: 0
+    width: 100%
+    border-radius: 3px
+    transform-origin: center center
+    transform: scale(1)
+    transition: transform 0.5s
+    position: relative
+    
+    img
+        width: 100%
+
+  
+.mainSlider__nav
+    position: absolute
+    width: 100%
+    display: flex
+    justify-content: center
+    z-index: 2
+    bottom: 20px
+
+.mainSlider__nav-btn
+    width: 10px
+    height: 10px
+    background: #fff
+    opacity: 0.6
+    display: block
+    border-radius: 50%
+    margin: 0 3px
+
+.mainSlider__nav-btn.active
+    opacity: 0
+
+/* ------------------ main slider ---------------- */
+/* ------------------ category slider ---------------- */
+.categorySlider 
+    width: 100%
+    padding: 0 0 0 10px
+    margin: 10px 0
+    max-width: 414px
+
+.categorySlider__slides 
+    display: flex
+    overflow-x: auto
+    scroll-snap-type: x mandatory
+    scroll-behavior: smooth
+    -webkit-overflow-scrolling: touch
+
+    ::-webkit-scrollbar 
+        display: none
+
+.categorySlider__slide 
+    scroll-snap-align: start
+    flex-shrink: 0
+    width: 90px
+    margin-right: 20px
+    border-radius: 50%
+    transform-origin: center center
+    transform: scale(1)
+    transition: transform 0.5s
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.categorySlider__btn_img
+    background: #FFD600
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 11px
+
+.categorySlider__btn_text
+    font-family: 'Rubik 400'
+    font-size: 11px
+    line-height: 13px
+    color: #222222
+    text-transform: capitalize
+
+  
+/* ------------------ category slider end ---------------- */
+/* ------------------- footer ------------------- */
+body
+    position: relative
+
+.footer
+    background: #fff
+    position: fixed
+    bottom: 0
+    max-width: 414px
+    width: 100%
+    z-index: 33
+    padding: 10px 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.footer__element
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-family: 'Rubik 400'
+    font-size: 10px
+    line-height: 12px
+    color: #222222
+    opacity: 0.4
+    text-transform: capitalize
+    padding: 0 3px
+
+.footer__element.active
+    opacity: 1
+
+.footer__img
+    font-size: 20px
+    margin-bottom: 5px
+
+/* ------------------- footer end ------------------- */
