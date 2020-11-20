@@ -4,6 +4,7 @@ for (let i = 0; i < btns.length; i++) {
     element.addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector('.productDetail').classList.add('active')
+        document.body.style.overflow = 'hidden'
     })
 }
 document.querySelector('.productDetail__decrease').addEventListener('click', function(e) {
@@ -19,4 +20,5 @@ document.querySelector('.productDetail__increase').addEventListener('click', fun
 document.querySelector('.productDetail__add').addEventListener('click', function(e) {
     e.preventDefault();
     document.querySelector('.productDetail').classList.remove('active')
+    document.body.style.overflow = 'auto'
 })

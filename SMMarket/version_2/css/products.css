@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url(../fonts/YandexSansText-Regular.ttf);
+}
+/* ----------------------- main title --------------------- */
+.main-title {
+  display: flex;
+  padding: 15px 16px;
+  align-items: center;
+}
+.main-title img {
+  width: 42px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.main-title__text {
+  font-family: Yandex Sans Text;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #222222;
+  opacity: 0.87;
+}
+
+/* ----------------------- main  title end --------------------- */
+/* ----------------------- filters --------------------- */
+.filters {
+  width: 100%;
+  padding: 0 0 20px 16px;
+  margin: 10px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.filters__slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.filters__slides::-webkit-scrollbar {
+  display: none;
+}
+
+.filters__slide {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: auto;
+  padding: 8px 10px;
+  margin-right: 6px;
+  border-radius: 8px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #EFEFEF;
+}
+
+.filters__btn {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+  opacity: 0.87;
+}
+
+/* ------------------ filters end ---------------- */
+/* ------------------ products ---------------- */
+.products {
+  padding: 15px 16px;
+  width: 100%;
+}
+
+.products__title {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #222222;
+  opacity: 0.87;
+  margin-bottom: 13px;
+}
+
+.prTabs__switchers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prTabs__switcher {
+  background: #fff;
+  padding: 5px 8px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+  border-radius: 8px;
+  opacity: 0.5;
+  margin-bottom: 5px;
+}
+.prTabs__switcher.active {
+  background: #222222;
+  color: #fff;
+  opacity: 1;
+}
+
+.prTabs__tab {
+  display: none;
+  flex-direction: column;
+}
+.prTabs__tab.active {
+  display: flex;
+}
+
+.prTab__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 15px 0;
+}
+
+.prTab__img {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 90px;
+}
+
+.prTab__like {
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 16px;
+  top: 10px;
+  right: 10px;
+}
+
+.prTab__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.prTab__name {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #838383;
+  opacity: 0.87;
+}
+
+.prTab__price {
+  font-family: Yandex Sans Text;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 12px 0;
+}
+
+.prTab__add {
+  background: #FFDA34;
+  border-radius: 8px;
+  padding: 5px 15px;
+  font-family: Yandex Sans Text;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.products__filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.products__filter-text {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #222222;
+  opacity: 0.87;
+}
+
+.products__filter-brn {
+  display: inline-block;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  margin-top: 10px;
+}
+
+.dropdown__text {
+  display: inline-block;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #222222;
+  position: relative;
+}
+.dropdown__text:after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: -15px;
+  display: block;
+  width: 12px;
+  height: 8px;
+  background: url(../images/arrow-down.png) no-repeat center center;
+}
+
+.dropdown__input {
+  display: none;
+}
+
+.dropdown__menu {
+  position: absolute;
+  z-index: 55;
+  width: 150%;
+  background: #fff;
+  top: 100%;
+  padding: 10px;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+}
+.dropdown__menu li {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 3px;
+}
+
+.dropdown__input + .dropdown__menu {
+  display: none;
+}
+
+.dropdown__input:checked + .dropdown__menu {
+  display: block;
+}
+
+/* ------------------ products end ---------------- */
+/* ------------------- footer ------------------- */
+body {
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.footer {
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 33;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #E5E5E5;
+}
+
+.footer__item {
+  position: relative;
+}
+
+.footer__cartCounter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  background: #222222;
+  color: white;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 11px;
+  text-align: center;
+  border-radius: 50%;
+  top: -1px;
+  right: 4px;
+}
+
+.footer__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Yandex Sans Text";
+  font-size: 10px;
+  line-height: 12px;
+  color: #222222;
+  opacity: 0.25;
+  text-transform: capitalize;
+  padding: 0 3px;
+}
+.footer__element.active {
+  opacity: 1;
+}
+.footer__element.active .footer__house {
+  background: url(../images/house-h.png) no-repeat center center;
+}
+.footer__element.active .footer__list {
+  background: url(../images/list-h.png) no-repeat center center;
+}
+.footer__element.active .footer__like {
+  background: url(../images/like-h.png) no-repeat center center;
+}
+.footer__element.active .footer__user {
+  background: url(../images/user-h.png) no-repeat center center;
+}
+.footer__element.active .footer__cart {
+  background: url(../images/cart-h.png) no-repeat center center;
+}
+
+.footer__img {
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-bottom: 5px;
+}
+
+.footer__house {
+  background: url(../images/house.png) no-repeat center center;
+}
+
+.footer__list {
+  background: url(../images/list.png) no-repeat center center;
+}
+
+.footer__like {
+  background: url(../images/like.png) no-repeat center center;
+}
+
+.footer__user {
+  background: url(../images/user.png) no-repeat center center;
+}
+
+.footer__cart {
+  background: url(../images/cart.png) no-repeat center center;
+}
+
+/* ------------------- footer end ------------------- */
+
+/*# sourceMappingURL=products.css.map */

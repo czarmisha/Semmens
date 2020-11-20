@@ -7,30 +7,6 @@
     <title>Main Page 1</title>
 </head>
 <body>
-    <div class="productDetail">
-        <div class="productDetail__content">
-            <div class="productDetail__img-wrapper">
-                <img src="images/limon-big.png" alt="">
-            </div>
-            <p class="productDetail__name">Липом Ламас</p>
-            <p class="productDetail__description">Овальный, желтый, 500г, для чая, </p>
-            <span class="productDetail__tag">Последний</span>
-            <span class="productDetail__like"><img src="images/like.png" alt=""></span>
-            <div class="productDetail__footer">
-                <div class="productDetail__footerLeft">
-                    <button class="productDetail__decrease">-</button>
-                    <span class="productDetail__count">1</span>
-                    <button class="productDetail__increase">+</button>
-                </div>
-                <div class="productDetail__footerRight">
-                    <a href="#" class="productDetail__add">
-                        добавить
-                        <span>23 000 uzs</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
     <header>
         <div class="logo">
             <img src="images/logo.png" alt="">
@@ -144,77 +120,63 @@
         </div>
         <div class="categories">
             <h3 class="categories__title">Категории</h3>
-            <div class="categories__tabs catTabs">
-                <ul class="catTabs__switchers">
-                    <li class="catTabs__switcher active" data-toggle='#tab-1'>бананы</li>
-                    <li class="catTabs__switcher" data-toggle='#tab-2'>подборки</li>
-                    <li class="catTabs__switcher" data-toggle='#tab-3'>рецепты</li>
-                </ul>
-                <div class="catTabs__tabs">
-                    <ul class="catTabs__tab catTab active" id="tab-1">
-                        <li class="catTab__item">
-                            <span class="catTab__img"><img src="images/category-1.png" alt=""></span>
-                            <a href="./products.html" class="catTab__name">Любимые товары</a>
-                            <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
-                        </li>
-                        <li class="catTab__item">
-                            <span class="catTab__img"><img src="images/category-2.png" alt=""></span>
-                            <a href="#" class="catTab__name">Любимые товары</a>
-                            <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
-                        </li>
-                        <li class="catTab__item">
-                            <span class="catTab__img"><img src="images/category-3.png" alt=""></span>
-                            <a href="#" class="catTab__name">Любимые товары</a>
-                            <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
-                        </li>
-                        <li class="catTab__item">
-                            <span class="catTab__img"><img src="images/category-4.png" alt=""></span>
-                            <a href="#" class="catTab__name">Любимые товары</a>
-                            <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
-                        </li>
-                        <li class="catTab__item">
-                            <span class="catTab__img"><img src="images/category-5.png" alt=""></span>
-                            <a href="#" class="catTab__name">Любимые товары</a>
-                            <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
-                        </li>
-                        <li class="catTab__item">
-                            <a href="#" class="catTab__name">Все категории</a>
-                            <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
-                        </li>
-                    </ul>
-                    <ul class="catTabs__tab catTab" id="tab-2">
-                        <li class="catTab__item">
-                            <span class="catTab__img"><img src="images/category-4.png" alt=""></span>
-                            <a href="#" class="catTab__name">Любимые товары</a>
-                            <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
-                        </li>
-                        <li class="catTab__item">
-                            <span class="catTab__img"><img src="images/category-5.png" alt=""></span>
-                            <a href="#" class="catTab__name">Любимые товары</a>
-                            <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
-                        </li>
-                        <li class="catTab__item">
-                            <a href="#" class="catTab__name">Все категории</a>
-                            <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
-                        </li>
-                    </ul>
-                    <ul class="catTabs__tab catTab" id="tab-3">
-                        <li class="catTab__item">
-                            <span class="catTab__img"><img src="images/category-4.png" alt=""></span>
-                            <a href="#" class="catTab__name">Любимые товары</a>
-                            <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
-                        </li>
-                        <li class="catTab__item">
-                            <span class="catTab__img"><img src="images/category-5.png" alt=""></span>
-                            <a href="#" class="catTab__name">Любимые товары</a>
-                            <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
-                        </li>
-                        <li class="catTab__item">
-                            <a href="#" class="catTab__name">Все категории</a>
-                            <span class="catTab__arrow"><img src="images/arrow-right.png" alt=""></span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="categories__wrapper">
+                <a href="products.html" class="categories__item">
+                    <div class="categories__img-wrapper">
+                        <img src="images/cat-1.png" alt="">
+                    </div>
+                    <h4 class="categories__name">Игрушки</h4>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__img-wrapper">
+                        <img src="images/cat-2.png" alt="">
+                    </div>
+                    <h4 class="categories__name">Игрушки</h4>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__img-wrapper">
+                        <img src="images/cat-3.png" alt="">
+                    </div>
+                    <h4 class="categories__name">Игрушки</h4>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__img-wrapper">
+                        <img src="images/cat-1.png" alt="">
+                    </div>
+                    <h4 class="categories__name">Игрушки</h4>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__img-wrapper">
+                        <img src="images/cat-2.png" alt="">
+                    </div>
+                    <h4 class="categories__name">Игрушки</h4>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__img-wrapper">
+                        <img src="images/cat-3.png" alt="">
+                    </div>
+                    <h4 class="categories__name">Игрушки</h4>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__img-wrapper">
+                        <img src="images/cat-1.png" alt="">
+                    </div>
+                    <h4 class="categories__name">Игрушки</h4>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__img-wrapper">
+                        <img src="images/cat-2.png" alt="">
+                    </div>
+                    <h4 class="categories__name">Игрушки</h4>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__img-wrapper">
+                        <img src="images/cat-3.png" alt="">
+                    </div>
+                    <h4 class="categories__name">Игрушки</h4>
+                </a>
+                
+                
             </div>
         </div>
         <div class="bottom-Slider">
@@ -271,7 +233,6 @@
             </li>
         </ul>
     </footer>
-    <script src="js/main.js"></script>
-    <script src="js/detail.js"></script>
+
 </body>
 </html>

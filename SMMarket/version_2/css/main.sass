@@ -271,69 +271,42 @@
     opacity: 0.87
     margin-bottom: 13px
 
-.catTabs__switchers
+.categories__wrapper
     display: flex
     flex-wrap: wrap
-    width: 100%
     align-items: center
     justify-content: space-between
-    margin-bottom: 20px
 
-.catTabs__switcher
-    background: #fff
-    padding: 5px 20px
-    font-family: 'Yandex Sans Text'
-    font-style: normal
-    font-weight: normal
-    font-size: 16px
-    line-height: 20px
-    text-transform: uppercase
-    color: #222222
+.categories__item
+    display: block
+    width: 120px
+    height: 120px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 7px 5px 12px 5px
+    justify-content: space-between
     border-radius: 8px
-    opacity: 0.5
-    margin-bottom: 5px
+    background: #FFC7DA
+    margin-bottom: 10px
 
-    &.active
-        background: #222222
-        color: #fff
-        opacity: 1
-
-.catTabs__tab
-    display: none
-
-    &.active
-        display: block
-
-.catTab__item
-    position: relative
+.categories__img-wrapper
+    height: 90px
     display: flex
     align-items: center
-    padding: 20px 0
-    border-top: 1px solid #E5E5E5
+    justify-content: center
+    width: 100%
+    margin-bottom: 3px
 
-    &:last-child
-        border-bottom: 1px solid #E5E5E5
-
-        .catTab__name
-            font-weight: bold
-
-.catTab__img
-    width: 27px
-    height: 27px
-    margin-right: 18px
-
-.catTab__name
+.categories__name
     font-family: 'Yandex Sans Text'
     font-style: normal
-    font-weight: normal
-    font-size: 16px
-    line-height: 20px
+    font-weight: bold
+    font-size: 13px
+    line-height: 18px
+    text-align: center
     color: #222222
-    opacity: 0.87
 
-.catTab__arrow
-    position: absolute
-    right: 20px
 /* ------------------ categories end ---------------- */
 /* ------------------ bottom slider ---------------- */
 .bottom-Slider
