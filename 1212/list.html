@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/list.css">
+    <title>Some list</title>
+</head>
+<body>
+    <ul class="list">
+        <li class="list__item dropdown">
+            <a href="#" class="list__item-btn">
+                <div class="list__img">
+                    <img src="images/eye.png" alt="">
+                </div>
+                <span class="list__text">Новинки</span>
+                <span class="list__icon"><img src="images/arrow.png" alt=""></span>
+            </a>
+            <ul class="dropdown__menu">
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 1</a>
+                </li>
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 2</a>
+                </li>
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 3</a>
+                </li>
+            </ul>
+        </li>
+        <li class="list__item dropdown">
+            <a href="#" class="list__item-btn">
+                <div class="list__img">
+                    <img src="images/Dress.png" alt="">
+                </div>
+                <span class="list__text">Одежда</span>
+                <span class="list__icon"><img src="images/arrow.png" alt=""></span>
+            </a>
+            <ul class="dropdown__menu">
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 1</a>
+                </li>
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 2</a>
+                </li>
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 3</a>
+                </li>
+            </ul>
+        </li>
+        <li class="list__item dropdown">
+            <a href="#" class="list__item-btn">
+                <div class="list__img">
+                    <img src="images/Socks.png" alt="">
+                </div>
+                <span class="list__text">Обувь</span>
+                <span class="list__icon"><img src="images/arrow.png" alt=""></span>
+            </a>
+            <ul class="dropdown__menu">
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 1</a>
+                </li>
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 2</a>
+                </li>
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 3</a>
+                </li>
+            </ul>
+        </li>
+        <li class="list__item dropdown">
+            <a href="#" class="list__item-btn">
+                <div class="list__img">
+                    <img src="images/Purse.png" alt="">
+                </div>
+                <span class="list__text">Аксессуары</span>
+                <span class="list__icon"><img src="images/arrow.png" alt=""></span>
+            </a>
+            <ul class="dropdown__menu">
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 1</a>
+                </li>
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 2</a>
+                </li>
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 3</a>
+                </li>
+            </ul>
+        </li>
+        <li class="list__item dropdown">
+            <a href="#" class="list__item-btn">
+                <div class="list__img">
+                    <img src="images/Gowalla.png" alt="">
+                </div>
+                <span class="list__text">Бренды</span>
+                <span class="list__icon"><img src="images/arrow.png" alt=""></span>
+            </a>
+            <ul class="dropdown__menu">
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 1</a>
+                </li>
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 2</a>
+                </li>
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__btn">Новинки 3</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        let btns = document.querySelectorAll('.list__item-btn');
+        for (let i = 0; i < btns.length; i++) {
+            const element = btns[i];
+            element.addEventListener('click', function (e) {
+                e.preventDefault();
+                let parent = this.closest('.list__item');
+                let dds = document.querySelectorAll('.dropdown__menu');
+                dds.forEach((el) => el.classList.remove('active'));
+                let dd = parent.querySelector('.dropdown__menu');
+                dd.classList.add('active')
+            })
+        }
+    </script>
+</body>
+</html>
