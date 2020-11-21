@@ -1,0 +1,368 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Yandex Sans Text'
+    src: url(../fonts/YandexSansText-Regular.ttf)
+
+// --------------------------- detail --------------------------
+.detail
+    padding: 15px 16px
+
+.detail__head
+    position: relative
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 25px
+
+.detail__img-wrapper
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 20px
+    margin-bottom: 22px
+
+    img
+        width: 60%
+
+.detail__name
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 18px
+    text-align: center
+    color: #838383
+    opacity: 0.87
+    margin-bottom: 12px
+
+.detail__description
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    color: #838383
+    opacity: 0.87
+
+.detail__tag
+    position: absolute
+    top: 20px
+    left: 20px
+    background: rgba(73, 73, 73, 0.2)
+    border-radius: 8px
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    text-align: center
+    color: #222
+    opacity: 0.87
+    padding: 6px 10px
+
+.detail__like
+    display: block
+    width: 17px
+    height: 20px
+    position: absolute
+    top: 25px
+    right: 20px
+
+.detail__bottom
+    background: #EFEFEF
+    border-radius: 8px
+    padding: 24px 20px
+
+.detail__bottomTitle
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 18px
+    color: #222222
+    opacity: 0.87
+    margin-bottom: 9px
+
+.detail__bottomText
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 22px
+    color: #838383
+    opacity: 0.87
+    margin-bottom: 12px
+
+.detail__bottomTag
+    display: block
+    background: #222222
+    border-radius: 8px
+    padding: 6px 10px
+    color: white
+    ont-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    text-align: center
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    max-width: 100px
+// --------------------------- detail end --------------------------
+// --------------------------- info --------------------------
+.info
+    padding: 15px 16px
+
+.info__title
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: #222222
+    opacity: 0.87
+    margin-bottom: 5px
+
+.delivery
+    display: flex
+    flex-direction: column
+
+.delivery__item
+    padding: 15px 0
+    position: relative
+    display: flex
+    align-items: center
+
+    &:last-child
+        border-top: 1px solid #E5E5E5
+
+.delivery__item-wrapper
+    position: relative
+    display: flex
+    width: 100%
+    align-items: center
+
+.delivery__img
+    margin-right: 20px
+    display: flex
+    align-items: center
+
+.delivery__desc
+    display: flex
+    flex-direction: column
+
+.delivery__textTop
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 14px
+    color: #222222
+    opacity: 0.87
+    margin-bottom: 9px
+
+.delivery__textbBottom
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #222222
+    opacity: 0.5
+
+.delivery__arrow
+    display: block
+    width: 9px
+    height: 16px
+    position: absolute
+    right: 0
+
+.info__text
+    background: #EFEFEF
+    border-radius: 8px
+    padding: 12px 15px
+    margin: 10px
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #838383
+
+// --------------------------- info end --------------------------
+/* ------------------ another ---------------- */
+.another
+    width: 100%
+    margin: 25px 0 15px
+    padding: 0 0 0 6px
+
+.another__title
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: #222222
+    opacity: 0.87
+    padding-left: 9px
+    margin-bottom: 18px
+
+.another_slider 
+    width: 100%
+    position: relative
+    padding-bottom: 15px
+
+.another_slider__slides 
+    display: flex
+    overflow-x: auto
+    scroll-snap-type: x mandatory
+    scroll-behavior: smooth
+    -webkit-overflow-scrolling: touch
+    padding-bottom: 15px
+
+    &::-webkit-scrollbar 
+        display: none
+
+.another_slider__slide 
+    scroll-snap-align: start
+    flex-shrink: 0
+    width: 32%
+    margin-right: 10px
+    border-radius: 8px
+    border: 1px solid #E5E5E5
+    transform-origin: center center
+    transform: scale(1)
+    transition: transform 0.5s
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 25px
+
+.another_slider__img-wrapper
+    width: 100%
+    height: 80px
+    margin: 15px 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    img
+        max-width: 80%
+
+.another_slider__description
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 18px
+    text-align: center
+    color: #838383
+    opacity: 0.87
+    text-align: center
+    margin-bottom: 2px
+
+.another_slider__price
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 18px
+    text-align: center
+    color: #222222
+
+.another_slider__btn
+    position: absolute
+    height: 30px
+    bottom: -15px
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 18px
+    text-align: center
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #222222
+    padding: 5px 15px
+    background: #FFDA34
+    border-radius: 8px
+/* ------------------ another end ---------------- */
+/* ------------------ detail footer end ---------------- */
+.detail__footer
+    padding: 15px 20px
+    border-top: 1px solid #E5E5E5
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+
+.detail__decrease,
+.detail__increase
+    background: #EFEFEF
+    border-radius: 8px
+    width: 40px
+    height: 40px
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 18px
+    text-align: center
+    border: none
+    color: rgba(34, 34, 34, 0.87)
+
+    &:focus
+        outline: none
+
+.detail__footerLeft
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 120px
+
+.detail__footerRight
+    width: 235px
+
+.detail__count
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 18px
+    text-align: center
+    color: #222222
+    opacity: 0.87
+
+.detail__add
+    background: #FFDA34
+    border-radius: 8px
+    height: 40px
+    padding: 0 14px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    text-align: center
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #222222
+
+    span
+        font-weight: bold
+/* ------------------ detail footer end ---------------- */
