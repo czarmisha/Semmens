@@ -1,0 +1,95 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'OpenSansBold'
+    src: url(../fonts/OpenSansBold.ttf)
+
+@font-face
+    font-family: 'OpenSansRegular'
+    src: url(../fonts/OpenSansRegular.ttf)
+
+.list
+    padding: 20px 15px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+.list__item
+    padding-bottom: 20px
+    position: relative
+    overflow: hidden
+    background: white
+    z-index: 33
+    width: 100%
+
+.list__item-btn
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    width: 100%
+    position: relative
+    background: white
+    overflow: hidden
+    z-index: 44
+
+.list__img
+    width: 21px
+    height: 21px
+    display: flex
+    align-items: center
+    margin-right: 15px
+
+    img
+        width: 100%
+
+.list__icon
+    display: flex
+    width: 5px
+    height: 5px
+    align-items: center
+    justify-content: center
+
+.list__text
+    color: black
+    font-size: 14px
+    font-family: 'OpenSansBold'
+    font-weight: bold
+    display: inline-block
+    margin-right: 6px
+    text-transform: uppercase
+
+    &:hover,
+    &:active
+        color: black  
+
+.dropdown__menu
+    padding-left: 35px
+    transition: 0.4s
+    position: absolute
+    transform: translateY(-30%)
+    opacity: 0
+
+    &.active
+        position: relative
+        transform: translateY(0)
+        opacity: 1
+
+.dropdown__item
+    padding: 10px 0
+
+.dropdown__btn 
+    font-family: 'OpenSansRegular'
+    font-weight: normal
+    font-size: 14px
+    color: black
+
+    &:hover,
+    &:active
+        color: black
+
+// ------ dropdown -----
