@@ -1,0 +1,398 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Roboto Black'
+    src: url(../fonts/Roboto-Black.ttf)
+
+@font-face
+    font-family: 'Roboto Medium'
+    src: url(../fonts/Roboto-Medium.ttf)
+
+@font-face
+    font-family: 'Roboto Regular'
+    src: url(../fonts/Roboto-Regular.ttf)
+
+$RobotoRegular: 'Roboto Regular'
+$RobotoMedium: 'Roboto Medium'
+$RobotoBlack: 'Roboto Black'
+// -------------- header -------------------
+body
+    background: white
+
+.header_menu
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 360px
+    height: 100%
+    background: white
+    padding: 15px
+    z-index: 55
+    transition: all 0.4s
+    transform: translateX(-100%)
+    box-shadow: 1px 0 4px #00000029
+
+    &.active
+        transform: translateX(0)
+
+    .menu_close
+        position: absolute
+        top: 40px
+        left: 25px
+        width: 24px
+        height: 24px
+        cursor: pointer
+
+    .menu_1
+        margin-bottom: 40px
+        width: 100%
+
+        .item
+            padding-left: 20%
+            a
+                font-family: $RobotoRegular
+                font-style: normal
+                font-weight: normal
+                font-size: 34px
+                line-height: 42px
+                text-transform: uppercase
+                color: #222222
+                text-align: left
+
+    .menu_2
+        margin-bottom: 40px
+        width: 100%
+
+        .item
+            padding-left: 20%
+            a
+                font-family: $RobotoRegular
+                font-style: normal
+                font-weight: normal
+                font-size: 34px
+                line-height: 42px
+                text-transform: uppercase
+                color: #222222
+                text-align: left
+
+    .menu_3
+        width: 100%
+        .item
+            padding-left: 20%
+            a
+                font-family: $RobotoRegular
+                font-style: normal
+                font-weight: normal
+                font-size: 34px
+                line-height: 42px
+                text-transform: uppercase
+                color: #222222
+                text-align: left
+
+.header_top
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    padding: 30px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background: white
+    z-index: 2
+
+    .left
+        display: flex
+        align-items: center
+
+        .menu_open
+            z-index: 33
+            margin-right: 30px
+            width: 24px
+            height: 18px
+            display: inline-block
+            cursor: pointer
+
+        .logo
+            display: inline-block
+            display: flex
+            align-items: center
+            
+            img
+                width: 120px
+                height: 50px
+            span
+                text-transform: uppercase
+                font-family: $RobotoBlack
+                font-style: normal
+                font-weight: 900
+                font-size: 70px
+                line-height: 50px
+                color: #222222
+        
+    .right
+        display: flex
+        align-items: center
+
+        .search_form
+            display: flex
+            align-items: center
+            margin-right: 40px
+
+            input
+                background: transparent
+                border-radius: 0
+                border: none
+                border-bottom: 1px solid #000
+                color: #000
+                max-width: 135px
+
+                &:focus
+                    outline: none
+                    color: #000
+
+                &::placeholder
+                    color: #000
+
+            label
+                font-family: $RobotoMedium
+                font-style: normal
+                font-weight: 500
+                font-size: 20px
+                line-height: 23px
+                text-transform: uppercase
+                color: #000
+                margin-right: 10px
+                margin-bottom: 0
+
+        .login
+            font-family: $RobotoMedium
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 23px
+            text-transform: uppercase
+            color: #000
+            margin-right: 35px
+            display: inline-block
+            &:hover
+                text-decoration: none
+
+        .help
+            font-family: $RobotoMedium
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 23px
+            text-transform: uppercase
+            color: #000
+            margin-right: 35px
+            display: inline-block
+            &:hover
+                text-decoration: none
+
+        .cart
+            display: inline-block
+            width: 24px
+            height: 24px
+
+        .search_ico
+            display: none
+            margin-right: 30px
+            width: 24px
+            height: 24px
+
+// ---------- main ----------
+main
+    padding-top: 110px
+
+.products
+    padding: 15px 90px 70px
+
+    .gallery
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        justify-content: space-evenly
+        width: 100%
+
+        .product
+            width: 23%
+            // margin-right: 30px
+            margin-bottom: 30px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+
+            .product_img
+                width: 100%
+                img
+                    width: 100%
+
+            .product_status
+                display: inline-block
+                margin: 16px 0 5px
+                font-family: $RobotoBlack
+                font-style: normal
+                font-weight: bold
+                font-size: 18px
+                line-height: 22px
+                color: #222222
+                text-transform: uppercase
+
+            .product_name
+                display: inline-block
+                margin-bottom: 4px
+                font-family: $RobotoRegular
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 22px
+                color: #222222
+                text-transform: uppercase
+
+            .product_price
+                display: inline-block
+                font-family: $RobotoRegular
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 22px
+                color: #222222
+                text-transform: uppercase
+
+    .options
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 50px
+
+        .sort_btn
+            display: none
+            font-family: $RobotoRegular
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 22px
+            color: #222222
+            text-transform: uppercase
+
+        .sort
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            margin-right: 20px
+
+            .item
+                margin-right: 25px
+
+                &:last-child
+                    margin-right: 0
+
+                a
+                    font-family: $RobotoRegular
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 22px
+                    color: #222222
+                    text-transform: uppercase
+
+                    &:hover
+                        text-decoration: underline
+                    &.active
+                        text-decoration: underline
+
+        .filters_btn
+            display: inline-block
+            font-family: $RobotoRegular
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 22px
+            color: #222222
+            text-transform: uppercase
+
+
+// media
+@media screen and ( max-width: 992px )
+    .products
+        padding: 15px 30px 70px
+    .header_top
+        .left
+            .logo
+                img
+                    width: 80px
+                    height: 30px   
+                span
+                    font-size: 43px   
+
+        .right
+            .search_form
+                margin-right: 20px
+            .login
+                margin-right: 15px
+            .help
+                margin-right: 15px
+    
+@media screen and ( max-width: 768px )
+    .header_top
+        .left
+            .logo
+                img
+                    width: 50px
+                    height: 20px   
+                span
+                    font-size: 30     
+        .right
+            .search_form
+               display: none
+
+            .login
+                display: none
+
+            .help
+                display: none
+
+            .cart
+                display: inline-block
+                width: 24px
+                height: 24px
+
+            .search_ico
+                display: inline-block
+
+    .products
+        .gallery
+            .product
+                width: 48%
+                margin-right: 0
+
+                .product_status
+                    font-size: 14px
+                .product_name
+                    font-size: 14px
+                .product_price
+                    font-size: 12px
+
+@media screen and ( max-width: 576px )
+    .products
+        padding: 15px 15px 40px
+        .options
+            .sort_btn
+                display: inline-block
+                font-size: 18px
+            .filters_btn
+                font-size: 18px
+            .sort
+                display: none
+    
+    .header_menu
+        width: 100%
