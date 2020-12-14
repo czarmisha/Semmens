@@ -1,0 +1,74 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Yandex Sans Text'
+    src: url(../fonts/YandexSansText-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Neue'
+    src: url(../fonts/HelveticaNeue.ttf)
+
+$Yandex: 'Yandex Sans Text', sans-serif
+$Helvetica: 'Helvetica Neue', sans-serif
+
+// ------ dropdown -----
+.dropdown 
+    display: inline-block
+    position: relative
+
+.dropdown__text 
+    display: inline-block
+    font-family: 'Yandex Sans Text'
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 17px
+    text-transform: uppercase
+    color: #222222
+    position: relative
+
+    &:after 
+        content: ''
+        position: absolute
+        top: 30%
+        right: -15px
+        display: block
+        width: 12px
+        height: 8px
+        background: url(../images/arrow-down.png) no-repeat center center
+
+.dropdown__input 
+     display: none
+
+.dropdown__menu 
+    position: absolute
+    z-index: 55
+    width: 150%
+    background: #fff
+    top: 100%
+    padding: 10px
+    margin: 2px 0 0 0
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1)
+    list-style-type: none
+
+    li
+        font-family: 'Yandex Sans Text'
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 17px
+        text-transform: uppercase
+        color: #222222
+        margin-bottom: 3px
+
+.dropdown__input + .dropdown__menu 
+    display: none
+
+.dropdown__input:checked + .dropdown__menu 
+    display: block
+// ------ dropdown end -----
