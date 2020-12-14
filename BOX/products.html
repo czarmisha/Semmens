@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/products.css">
+    <title>Product list</title>
+</head>
+<body>
+    <header>
+        <nav class="header_menu">
+            <span class="menu_close"><img src="images/menu_close.png" alt=""></span>
+            <ul class="menu_1">
+                <li class="item"><a href="">ultima</a></li>
+                <li class="item"><a href="">semana</a></li>
+            </ul>
+            <ul class="menu_2">
+                <li class="item"><a href="">mujer</a></li>
+                <li class="item"><a href="">trf</a></li>
+                <li class="item"><a href="">hombre</a></li>
+                <li class="item"><a href="">minis</a></li>
+            </ul>
+            <ul class="menu_3">
+                <li class="item"><a href="">editorials</a></li>
+            </ul>
+        </nav>
+        <div class="header_top">
+            <div class="left">
+                <span class="menu_open"><img src="images/menu_open_black.png" alt=""></span>
+                <a href="" class="logo">
+                    <img src="images/logo_black.png" alt="">
+                    <span class="page_category">man</span>
+                </a>
+            </div>
+            <div class="right">
+                <form action="" class="search_form">
+                    <label for="#search_inp">поиск</label>
+                    <input type="text" name="" id="search_inp">
+                </form>
+                <a href="" class="login">log in</a>
+                <a href="" class="help">help</a>
+                <a href="" class="search_ico"><img src="images/search_ico_black.png" alt=""></a>
+                <a href="" class="cart"><img src="images/cart_black.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="products">
+            <div class="options">
+                <span class="sort_btn">sort</span>
+                <ul class="sort">
+                    <li class="item"><a class="active" href="">view all</a></li>
+                    <li class="item"><a href="">outwear</a></li>
+                    <li class="item"><a href="">knitwear</a></li>
+                    <li class="item"><a href="">tshirt | sweatshirts</a></li>
+                    <li class="item"><a href="">shirts</a></li>
+                    <li class="item"><a href="">bottom</a></li>
+                    <li class="item"><a href="">shoes & bags</a></li>
+                    <li class="item"><a href="">accesories | perfume</a></li>
+                </ul>
+                <span class="filters_btn">filters</span>
+            </div>
+            <div class="gallery">
+                <div class="product">
+                    <div class="product_img"><img src="images/product_1.jpg" alt=""></div>
+                    <span class="product_status">new</span>
+                    <a href="" class="product_name">WRINKLE EFFECT PLAID SHIRT</a>
+                    <span class="product_price">49.90 usd</span>
+                </div>
+                <div class="product">
+                    <div class="product_img"><img src="images/product_1.jpg" alt=""></div>
+                    <span class="product_status">new</span>
+                    <a href="" class="product_name">WRINKLE EFFECT PLAID SHIRT</a>
+                    <span class="product_price">49.90 usd</span>
+                </div>
+                <div class="product">
+                    <div class="product_img"><img src="images/product_1.jpg" alt=""></div>
+                    <span class="product_status">new</span>
+                    <a href="" class="product_name">WRINKLE EFFECT PLAID SHIRT</a>
+                    <span class="product_price">49.90 usd</span>
+                </div>
+                <div class="product">
+                    <div class="product_img"><img src="images/product_1.jpg" alt=""></div>
+                    <span class="product_status">new</span>
+                    <a href="" class="product_name">WRINKLE EFFECT PLAID SHIRT</a>
+                    <span class="product_price">49.90 usd</span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <script>
+        const openBtn = document.querySelector('.menu_open');
+        const closeBtn = document.querySelector('.menu_close');
+        const menu = document.querySelector('.header_menu')
+        openBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            menu.classList.add('active');
+        });
+        closeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            menu.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
