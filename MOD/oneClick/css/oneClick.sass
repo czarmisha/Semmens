@@ -1,0 +1,382 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Helvetica'
+    src: url(../fonts/HelveticaRegular.ttf)
+
+@font-face
+    font-family: 'HelveticaNeueLight'
+    src: url(../fonts/HelveticaNeue-Light.ttf)
+
+@font-face
+    font-family: 'HelveticaNeueBold'
+    src: url(../fonts/HelveticaNeue-Bold.ttf)
+
+$Helvetica: 'Helvetica'
+$HelveticaNeueLight: 'HelveticaNeueLight'
+$HelveticaNeueBold: 'HelveticaNeueBold'
+
+// oneClick
+.oneClick
+    max-width: 414px
+    width: 100%
+    padding: 20px 0
+    .top
+        background: #fff
+        padding: 0 20px
+        padding-bottom: 30px
+        border-bottom: 5px solid #e5e5e5
+        h5
+            width: 100%
+            text-align: center
+            position: relative
+            font-family: $HelveticaNeueBold
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 19px
+            text-transform: uppercase
+            color: #000000
+            margin-bottom: 30px
+            a
+                position: absolute
+                left: 0
+                width: 23px
+                height: 19px
+                img
+                    width: 23px
+                    height: 19px
+        
+        .form
+            width: 100%
+            input
+                width: 100%
+                border: none
+                padding: 10px 0
+                margin-bottom: 15px
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+                &:last-child
+                    margin-bottom: 0
+                &::placeholder
+                    font-family: $HelveticaNeueLight
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 14px
+                    line-height: 17px
+                    color: #000000
+                    text-transform: uppercase
+                    opacity: 0.4
+                &:focus
+                    outline: none
+                
+    .delivery
+        background: #fff
+        padding: 27px 20px
+        border-bottom: 5px solid #e5e5e5
+        .title
+            font-family: $Helvetica
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 18px
+            text-transform: uppercase
+            color: #000000
+            margin-bottom: 30px
+            text-align: left
+        ul
+            width: 100%
+            .item
+                width: 100%
+                display: flex
+                align-items: flex-start
+                border-bottom: 1px solid #EEEEF0
+                padding: 15px 0
+                position: relative
+                .item_selected
+                    position: absolute
+                    right: 0
+                    display: none
+                &.active
+                    .item_selected
+                        display: block
+                &:last-child
+                    border-bottom: none
+                .item_text
+                    margin-left: 20px
+                    display: flex
+                    flex-direction: column
+                .item_title
+                    margin-bottom: 3px
+                    font-family: $Helvetica
+                    font-weight: bold
+                    font-size: 16px
+                    line-height: 19px
+                    color: #000000
+                .item_time
+                    font-family: $Helvetica
+                    font-size: 13px
+                    line-height: 18px
+                    color: #000000
+                    opacity: 0.87
+                .item_price
+                    font-family: $Helvetica
+                    font-weight: bold
+                    font-size: 13px
+                    line-height: 18px
+                    color: #000000
+
+    .payment
+        background: #fff
+        padding: 27px 20px
+        border-bottom: 5px solid #e5e5e5
+        .title
+            font-family: $Helvetica
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 18px
+            text-transform: uppercase
+            color: #000000
+            margin-bottom: 30px
+            text-align: left
+        ul
+            width: 100%
+            .item
+                width: 100%
+                display: flex
+                align-items: flex-start
+                border-bottom: 1px solid #EEEEF0
+                padding: 15px 0
+                position: relative
+                .item_selected
+                    position: absolute
+                    right: 0
+                    display: none
+                &.active
+                    .item_selected
+                        display: block
+                &:last-child
+                    border-bottom: none
+                .item_text
+                    margin-left: 20px
+                    display: flex
+                    flex-direction: column
+                .item_title
+                    margin-bottom: 3px
+                    font-family: $Helvetica
+                    font-weight: bold
+                    font-size: 16px
+                    line-height: 19px
+                    color: #000000
+                .item_time
+                    font-family: $Helvetica
+                    font-size: 13px
+                    line-height: 18px
+                    color: #000000
+                    opacity: 0.87
+                .item_price
+                    font-family: $Helvetica
+                    font-weight: bold
+                    font-size: 13px
+                    line-height: 18px
+                    color: #000000
+
+    .bottom
+        background: #fff
+        padding: 27px 20px 0
+        display: flex
+        align-items: stretch
+        .left
+            margin-right: 15px
+            width: 80px
+            padding: 10px
+            display: flex
+            align-items: center
+            justify-content: center
+            background: #e5e5e5
+            img
+                width: 100%
+        .right
+            display: flex
+            flex-direction: column
+            position: relative
+            align-items: flex-start
+            width: 100%
+            .name
+                font-family: $Helvetica
+                font-weight: bold
+                font-size: 13px
+                line-height: 15px
+                color: #000000
+            .desc
+                font-family: $Helvetica
+                font-size: 11px
+                line-height: 13px
+                color: #000000
+                margin-bottom: 15px
+            .type
+                margin-bottom: 3px
+                font-family: Helvetica
+                font-size: 11px
+                line-height: 13px
+                color: #000000
+                opacity: 0.5
+            .size
+                font-family: $Helvetica
+                font-size: 11px
+                line-height: 13px
+                color: #000000
+                margin-bottom: 4px
+            .color
+                font-family: $Helvetica
+                font-size: 11px
+                line-height: 13px
+                color: #000000
+                margin-bottom: 5px
+            .trash
+                position: absolute
+                right: 0
+                top: 0
+            .settings
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .price
+                    font-family: $Helvetica
+                    font-size: 14px
+                    line-height: 16px
+                    color: #000000
+                .count
+                    display: flex
+                    align-items: center
+                    span
+                        font-family: $Helvetica
+                        margin: 0 5px
+                        font-size: 14px
+                        line-height: 16px
+                        color: #000000
+                    .inc
+                        width: 18px
+                        height: 18px
+                        background: #000000
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        color: white
+                        border: none
+                        border-radius: 3px
+                    .dec
+                        width: 18px
+                        height: 18px
+                        background: #000000
+                        display: flex
+                        // align-items: center
+                        justify-content: center
+                        color: white
+                        border: none
+                        border-radius: 3px
+        
+    .submit
+        padding: 30px 20px 0
+        .submit_btn
+            display: flex
+            width: 100%
+            align-items: center
+            justify-content: center
+            padding: 18px
+            background: #222
+            font-family: Helvetica
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            text-transform: uppercase
+            color: #FFFFFF
+            text-decoration: none
+            text-align: center                        
+
+
+
+/* ------------------- footer ------------------- */
+body
+    position: relative
+    padding-bottom: 65px
+
+.footer
+    background: #f7f7f7
+    position: fixed
+    bottom: 0
+    
+    width: 100%
+    z-index: 33
+    padding: 10px 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.footer__item
+    position: relative
+
+.footer__cartCounter
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 14px
+    height: 14px
+    background: #222222
+    color: white
+    font-family: $Helvetica
+    font-style: normal
+    font-weight: normal
+    font-size: 9px
+    line-height: 11px
+    text-align: center
+    border-radius: 50%
+    top: -1px
+    right: 4px
+
+.footer__element
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-family: $Helvetica
+    font-size: 10px
+    line-height: 12px
+    color: #222222
+    opacity: 0.25
+    text-transform: capitalize
+    padding: 0 3px
+
+    &.active
+        opacity: 1
+
+.footer__img
+    display: block
+    width: 22px
+    height: 22px
+    margin-bottom: 5px
+    
+.footer__house
+    background: url(../images/cart.png) no-repeat center center
+
+.footer__list
+    background: url(../images/cart.png) no-repeat center center
+
+.footer__like
+    background: url(../images/cart.png) no-repeat center center
+
+.footer__user
+    background: url(../images/cart.png) no-repeat center center
+
+.footer__cart
+    background: url(../images/cart.png) no-repeat center center
+
+
+/* ------------------- footer end ------------------- */

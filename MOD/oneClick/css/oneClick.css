@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(../fonts/HelveticaRegular.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLight";
+  src: url(../fonts/HelveticaNeue-Light.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueBold";
+  src: url(../fonts/HelveticaNeue-Bold.ttf);
+}
+.oneClick {
+  max-width: 414px;
+  width: 100%;
+  padding: 20px 0;
+}
+.oneClick .top {
+  background: #fff;
+  padding: 0 20px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid #e5e5e5;
+}
+.oneClick .top h5 {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-family: "HelveticaNeueBold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.oneClick .top h5 a {
+  position: absolute;
+  left: 0;
+  width: 23px;
+  height: 19px;
+}
+.oneClick .top h5 a img {
+  width: 23px;
+  height: 19px;
+}
+.oneClick .top .form {
+  width: 100%;
+}
+.oneClick .top .form input {
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.oneClick .top .form input:last-child {
+  margin-bottom: 0;
+}
+.oneClick .top .form input::placeholder {
+  font-family: "HelveticaNeueLight";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+.oneClick .top .form input:focus {
+  outline: none;
+}
+.oneClick .delivery {
+  background: #fff;
+  padding: 27px 20px;
+  border-bottom: 5px solid #e5e5e5;
+}
+.oneClick .delivery .title {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.oneClick .delivery ul {
+  width: 100%;
+}
+.oneClick .delivery ul .item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #EEEEF0;
+  padding: 15px 0;
+  position: relative;
+}
+.oneClick .delivery ul .item .item_selected {
+  position: absolute;
+  right: 0;
+  display: none;
+}
+.oneClick .delivery ul .item.active .item_selected {
+  display: block;
+}
+.oneClick .delivery ul .item:last-child {
+  border-bottom: none;
+}
+.oneClick .delivery ul .item .item_text {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.oneClick .delivery ul .item .item_title {
+  margin-bottom: 3px;
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.oneClick .delivery ul .item .item_time {
+  font-family: "Helvetica";
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.87;
+}
+.oneClick .delivery ul .item .item_price {
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+.oneClick .payment {
+  background: #fff;
+  padding: 27px 20px;
+  border-bottom: 5px solid #e5e5e5;
+}
+.oneClick .payment .title {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.oneClick .payment ul {
+  width: 100%;
+}
+.oneClick .payment ul .item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #EEEEF0;
+  padding: 15px 0;
+  position: relative;
+}
+.oneClick .payment ul .item .item_selected {
+  position: absolute;
+  right: 0;
+  display: none;
+}
+.oneClick .payment ul .item.active .item_selected {
+  display: block;
+}
+.oneClick .payment ul .item:last-child {
+  border-bottom: none;
+}
+.oneClick .payment ul .item .item_text {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.oneClick .payment ul .item .item_title {
+  margin-bottom: 3px;
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.oneClick .payment ul .item .item_time {
+  font-family: "Helvetica";
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.87;
+}
+.oneClick .payment ul .item .item_price {
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+.oneClick .bottom {
+  background: #fff;
+  padding: 27px 20px 0;
+  display: flex;
+  align-items: stretch;
+}
+.oneClick .bottom .left {
+  margin-right: 15px;
+  width: 80px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e5e5;
+}
+.oneClick .bottom .left img {
+  width: 100%;
+}
+.oneClick .bottom .right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  width: 100%;
+}
+.oneClick .bottom .right .name {
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+}
+.oneClick .bottom .right .desc {
+  font-family: "Helvetica";
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.oneClick .bottom .right .type {
+  margin-bottom: 3px;
+  font-family: Helvetica;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  opacity: 0.5;
+}
+.oneClick .bottom .right .size {
+  font-family: "Helvetica";
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.oneClick .bottom .right .color {
+  font-family: "Helvetica";
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.oneClick .bottom .right .trash {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.oneClick .bottom .right .settings {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.oneClick .bottom .right .settings .price {
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.oneClick .bottom .right .settings .count {
+  display: flex;
+  align-items: center;
+}
+.oneClick .bottom .right .settings .count span {
+  font-family: "Helvetica";
+  margin: 0 5px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.oneClick .bottom .right .settings .count .inc {
+  width: 18px;
+  height: 18px;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+.oneClick .bottom .right .settings .count .dec {
+  width: 18px;
+  height: 18px;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+.oneClick .submit {
+  padding: 30px 20px 0;
+}
+.oneClick .submit .submit_btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: #222;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* ------------------- footer ------------------- */
+body {
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.footer {
+  background: #f7f7f7;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 33;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__item {
+  position: relative;
+}
+
+.footer__cartCounter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  background: #222222;
+  color: white;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 11px;
+  text-align: center;
+  border-radius: 50%;
+  top: -1px;
+  right: 4px;
+}
+
+.footer__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Helvetica";
+  font-size: 10px;
+  line-height: 12px;
+  color: #222222;
+  opacity: 0.25;
+  text-transform: capitalize;
+  padding: 0 3px;
+}
+.footer__element.active {
+  opacity: 1;
+}
+
+.footer__img {
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-bottom: 5px;
+}
+
+.footer__house {
+  background: url(../images/cart.png) no-repeat center center;
+}
+
+.footer__list {
+  background: url(../images/cart.png) no-repeat center center;
+}
+
+.footer__like {
+  background: url(../images/cart.png) no-repeat center center;
+}
+
+.footer__user {
+  background: url(../images/cart.png) no-repeat center center;
+}
+
+.footer__cart {
+  background: url(../images/cart.png) no-repeat center center;
+}
+
+/* ------------------- footer end ------------------- */
+
+/*# sourceMappingURL=oneClick.css.map */
