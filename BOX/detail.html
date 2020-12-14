@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/detail.css">
+    <title>Product detail</title>
+</head>
+<body>
+    <header>
+        <nav class="header_menu">
+            <span class="menu_close"><img src="images/menu_close.png" alt=""></span>
+            <ul class="menu_1">
+                <li class="item"><a href="">ultima</a></li>
+                <li class="item"><a href="">semana</a></li>
+            </ul>
+            <ul class="menu_2">
+                <li class="item"><a href="">mujer</a></li>
+                <li class="item"><a href="">trf</a></li>
+                <li class="item"><a href="">hombre</a></li>
+                <li class="item"><a href="">minis</a></li>
+            </ul>
+            <ul class="menu_3">
+                <li class="item"><a href="">editorials</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="detail">
+            <div class="left">
+                <span class="menu_open"><img src="images/menu_open_black.png" alt=""></span>
+                <img src="images/detail1.jpg" alt="">
+                <img src="images/detail1.jpg" alt="">
+            </div>
+            <div class="right">
+                <div class="header_top">
+                    <form action="" class="search_form">
+                        <label for="#search_inp">поиск</label>
+                        <input type="text" name="" id="search_inp">
+                    </form>
+                    <a href="" class="login">log in</a>
+                    <a href="" class="help">help</a>
+                    <a href="" class="search_ico"><img src="images/search_ico_black.png" alt=""></a>
+                    <a href="" class="cart"><img src="images/cart_black.png" alt=""></a>
+                </div>
+                <h1 class="title">RIPPED DENIM OVERSHIRT</h1>
+                <div class="price">
+                    <span class="price_before">49.90 usd</span>
+                    <span class="price_after">29.99 usd</span>
+                    <span class="price_sale">-35%</span>
+                </div>
+                <div class="desc">
+                    <h3 class="desc_title">
+                        BLACK - 3256/985
+                    </h3>
+                    <p class="desc_text">Overshirt with lapel collar and long sleeves with buttoned cuffs. Washed effect with rips. Chest patch pockets. Front snap button closure.</p>
+                </div>
+                <div class="desc">
+                    <h3 class="desc_title">
+                        JOIN LIFE
+                    </h3>
+                    <p class="desc_text">Overshirt with lapel collar and long sleeves with buttoned cuffs. Washed effect with rips. Chest patch pockets. Front snap button closure.</p>
+                </div>
+                <a href="" class="findout_more">Find out more <img src="images/arrow_right.png" alt=""></a>
+                <ul class="sizes">
+                   <li class="size"><a href="">S</a></li> 
+                   <li class="size"><a href="">M</a></li> 
+                   <li class="size"><a href="">L</a></li> 
+                   <li class="size"><a href="">XL</a></li> 
+                </ul>
+                <div class="buttons">
+                    <a href="" class="font_size">font size</a>
+                    <a href="" class="add">add</a>
+                </div>
+                <div class="colors">
+                    <p class="colors_title">
+                        3 more colors
+                    </p>
+                    <ul class="colors_box">
+                        <li class="color_item">
+                            <img src="images/detail_colors.png" alt="">
+                            <span class="color_name">Light blue</span>
+                        </li>
+                        <li class="color_item">
+                            <img src="images/detail_colors.png" alt="">
+                            <span class="color_name">Light blue</span>
+                        </li>
+                        <li class="color_item">
+                            <img src="images/detail_colors.png" alt="">
+                            <span class="color_name">Light blue</span>
+                        </li>
+                    </ul>
+                    <ul class="info">
+                        <li class="info_item">
+                            <div class="info_dropp active">
+                                <img src="images/arrow_right.png" alt="">
+                                <span class="info_title">состав и уход</span>
+                            </div>
+                            <p class="hidden_info active">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore perspiciatis dicta rerum fuga ducimus iure accusantium veniam officiis nam itaque!</p>
+                        </li>
+                        <li class="info_item">
+                            <div class="info_dropp">
+                                <img src="images/arrow_right.png" alt="">
+                                <span class="info_title">состав и уход</span>
+                            </div>
+                            <p class="hidden_info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore perspiciatis dicta rerum fuga ducimus iure accusantium veniam officiis nam itaque!</p>
+                        </li>
+                        <li class="info_item">
+                            <div class="info_dropp">
+                                <img src="images/arrow_right.png" alt="">
+                                <span class="info_title">состав и уход</span>
+                            </div>
+                            <p class="hidden_info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore perspiciatis dicta rerum fuga ducimus iure accusantium veniam officiis nam itaque!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <script>
+        const openBtn = document.querySelector('.menu_open');
+        const closeBtn = document.querySelector('.menu_close');
+        const menu = document.querySelector('.header_menu')
+        openBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            menu.classList.add('active');
+        });
+        closeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            menu.classList.remove('active');
+        });
+
+        const dropdowns = document.querySelectorAll('.info_dropp');
+        for (let i = 0; i < dropdowns.length; i++) {
+            const element = dropdowns[i];
+            element.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.classList.toggle('active');
+                this.closest('.info_item').querySelector('.hidden_info').classList.toggle('active');
+            })
+        }
+    </script>
+</body>
+</html>

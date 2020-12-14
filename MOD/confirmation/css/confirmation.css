@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Helvetica Light";
+  src: url(../fonts/HelveticaLight.ttf);
+  font-weight: 300;
+}
+.confirmation {
+  max-width: 414px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 18px 20px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.confirmation .info {
+  font-family: "Helvetica Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.confirmation .view {
+  font-family: "Helvetica Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.87;
+}
+
+/*# sourceMappingURL=confirmation.css.map */
