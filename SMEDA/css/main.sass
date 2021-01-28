@@ -38,7 +38,7 @@ body
 // --------------------------------------------------------------------
 // ------------------------------ HEADER --------------------------------------
 .header_top
-    padding: 36px 15px 10px
+    padding: 36px 30px 10px
     display: flex
     justify-content: space-between
     align-items: center
@@ -108,7 +108,7 @@ body
                 margin-top: 6px
 
 .header_bottom
-    padding: 10px 15px 17px
+    padding: 10px 30px 17px
     border-bottom: 1px solid #B0B0B0
 
     .some_list
@@ -128,7 +128,7 @@ body
 // ------------------------------- quick_delivery --------------------------
 .quick_delivery
     width: 100%
-    padding: 15px
+    padding: 15px 30px
 
     .wrapper
         background: url('../images/quick_delivery.jpg') no-repeat center center /cover
@@ -292,7 +292,7 @@ body
 // ------------------------------------------- info_content ------------------------
 .info_content
     width: 100%
-    padding: 12px 15px 0
+    padding: 12px 85px 0
 
     .search_form
         margin: 0 auto
@@ -335,6 +335,7 @@ body
         display: flex
         align-items: center
         justify-content: space-between
+        flex-wrap: wrap
         // max-width: 1150px
         margin: 0 auto
         
@@ -368,7 +369,7 @@ body
 .info_slider
     width: 100%
     border-bottom: 1px solid #B0B0B0
-    padding: 22px 0 33px 40px
+    padding: 22px 0 33px 85px
 
     .info_slide
         width: 300px
@@ -424,7 +425,8 @@ body
 .promotions
     width: 100%
     border-bottom: 1px solid #B0B0B0
-    padding: 35px 15px
+    padding: 35px 85px
+    background: #F9F9F9
     .title
         margin-bottom: 13px
         font-family: $R_bold
@@ -529,3 +531,208 @@ body
     top: 43%!important
     &::before
         content: ''!important
+
+// -------------------------------- restaurants ------------------------
+.restaurants
+    width: 100%
+    padding: 60px 85px
+    background: #F9F9F9
+    .title
+        margin-bottom: 13px
+        font-family: $R_bold
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 33px
+        color: #000000
+
+    .row
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    .restaurant
+        width: 30%
+
+        .restaurant-img
+            width: 100%
+            position: relative
+            img
+                width: 100%
+            .time
+                position: absolute
+                display: flex
+                bottom: 0
+                right: -2px
+                background: #fff
+                padding: 3px 13px
+                border-radius: 11px
+                font-family: $R_med
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 19px
+                color: #0EC645
+                .time_img
+                    margin-right: 7px
+                    width: 16px
+                    height: 16px
+
+        .restaurant-info
+            display: flex
+            align-items: center
+            width: 100%
+            justify-content: flex-start
+            .price
+                font-family: $R_med
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 19px
+                color: #222222
+                padding: 3px 7px
+                background: #EFEFEF
+                border-radius: 11px
+
+        .name
+            font-family: $R_med
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 23px
+            margin-bottom: 2px
+            color: #000000
+            width: 100%
+            text-align: left
+            margin-top: 10px
+    
+    .show_more
+        width: 100%
+        display: block
+        margin-top: 40px
+        background: #FCE000
+        border-radius: 4px
+        font-family: $R_med
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        color: #000000
+        padding: 11px
+        text-align: center
+
+// ---------------------------- footer ----------------------------
+footer
+    padding: 50px 85px 40px
+    .footer_top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 80px
+
+        .logo
+            img
+                width: 126px
+                height: 27px
+
+        .downloads
+            display: flex
+            align-items: center
+            .appstore
+                width: 133px
+                height: 45px
+                display: block
+                img
+                    width: 100%
+            .playmarket
+                width: 155px
+                height: 45px
+                margin-left: 35px
+                display: block
+                img
+                    width: 100%
+
+    .footer_bottom
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+
+        .left
+            display: flex
+        
+            .regions
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                margin-right: 80px
+                .title
+                    font-family: $R_bold
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 17px
+                    line-height: 20px
+                    color: #646464
+                    margin-bottom: 13px
+                .region
+                    margin-bottom: 13px
+                    .link
+                        font-family: $R_reg
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 13px
+                        line-height: 15px
+                        color: #B8B8B8
+                        &:last-child
+                            margin-bottom: 0
+                            margin-top: 37px
+
+            .kitchens
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                .title
+                    font-family: $R_bold
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 17px
+                    line-height: 20px
+                    color: #646464
+                    margin-bottom: 13px
+                .kitchen
+                    margin-bottom: 13px
+                    .link
+                        font-family: $R_reg
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 13px
+                        line-height: 15px
+                        color: #B8B8B8
+                        &:last-child
+                            margin-bottom: 0
+                            margin-top: 37px
+
+        .right
+            .about
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                .title
+                    font-family: $R_bold
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 17px
+                    line-height: 20px
+                    color: #646464
+                    margin-bottom: 13px
+                .item
+                    margin-bottom: 13px
+                    .link
+                        font-family: $R_reg
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 13px
+                        line-height: 15px
+                        color: #B8B8B8
+                        &:last-child
+                            margin-bottom: 0
+                            margin-top: 37px

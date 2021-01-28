@@ -32,7 +32,7 @@ body {
 }
 
 .header_top {
-  padding: 36px 15px 10px;
+  padding: 36px 30px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +97,7 @@ body {
 }
 
 .header_bottom {
-  padding: 10px 15px 17px;
+  padding: 10px 30px 17px;
   border-bottom: 1px solid #B0B0B0;
 }
 .header_bottom .some_list {
@@ -120,7 +120,7 @@ body {
 
 .quick_delivery {
   width: 100%;
-  padding: 15px;
+  padding: 15px 30px;
 }
 .quick_delivery .wrapper {
   background: url("../images/quick_delivery.jpg") no-repeat center center/cover;
@@ -295,7 +295,7 @@ body {
 
 .info_content {
   width: 100%;
-  padding: 12px 15px 0;
+  padding: 12px 85px 0;
 }
 .info_content .search_form {
   margin: 0 auto;
@@ -339,6 +339,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 .info_content .categories .category {
@@ -370,7 +371,7 @@ body {
 .info_slider {
   width: 100%;
   border-bottom: 1px solid #B0B0B0;
-  padding: 22px 0 33px 40px;
+  padding: 22px 0 33px 85px;
 }
 .info_slider .info_slide {
   width: 300px;
@@ -432,7 +433,8 @@ body {
 .promotions {
   width: 100%;
   border-bottom: 1px solid #B0B0B0;
-  padding: 35px 15px;
+  padding: 35px 85px;
+  background: #F9F9F9;
 }
 .promotions .title {
   margin-bottom: 13px;
@@ -546,6 +548,231 @@ body {
 }
 .slick-next::before {
   content: "" !important;
+}
+
+.restaurants {
+  width: 100%;
+  padding: 60px 85px;
+  background: #F9F9F9;
+}
+.restaurants .title {
+  margin-bottom: 13px;
+  font-family: "Roboto Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+}
+.restaurants .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurants .restaurant {
+  width: 30%;
+}
+.restaurants .restaurant .restaurant-img {
+  width: 100%;
+  position: relative;
+}
+.restaurants .restaurant .restaurant-img img {
+  width: 100%;
+}
+.restaurants .restaurant .restaurant-img .time {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: -2px;
+  background: #fff;
+  padding: 3px 13px;
+  border-radius: 11px;
+  font-family: "Roboto Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0EC645;
+}
+.restaurants .restaurant .restaurant-img .time .time_img {
+  margin-right: 7px;
+  width: 16px;
+  height: 16px;
+}
+.restaurants .restaurant .restaurant-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+.restaurants .restaurant .restaurant-info .price {
+  font-family: "Roboto Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding: 3px 7px;
+  background: #EFEFEF;
+  border-radius: 11px;
+}
+.restaurants .restaurant .name {
+  font-family: "Roboto Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 2px;
+  color: #000000;
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+}
+.restaurants .show_more {
+  width: 100%;
+  display: block;
+  margin-top: 40px;
+  background: #FCE000;
+  border-radius: 4px;
+  font-family: "Roboto Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  padding: 11px;
+  text-align: center;
+}
+
+footer {
+  padding: 50px 85px 40px;
+}
+footer .footer_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+footer .footer_top .logo img {
+  width: 126px;
+  height: 27px;
+}
+footer .footer_top .downloads {
+  display: flex;
+  align-items: center;
+}
+footer .footer_top .downloads .appstore {
+  width: 133px;
+  height: 45px;
+  display: block;
+}
+footer .footer_top .downloads .appstore img {
+  width: 100%;
+}
+footer .footer_top .downloads .playmarket {
+  width: 155px;
+  height: 45px;
+  margin-left: 35px;
+  display: block;
+}
+footer .footer_top .downloads .playmarket img {
+  width: 100%;
+}
+footer .footer_bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer .footer_bottom .left {
+  display: flex;
+}
+footer .footer_bottom .left .regions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 80px;
+}
+footer .footer_bottom .left .regions .title {
+  font-family: "Roboto Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #646464;
+  margin-bottom: 13px;
+}
+footer .footer_bottom .left .regions .region {
+  margin-bottom: 13px;
+}
+footer .footer_bottom .left .regions .region .link {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #B8B8B8;
+}
+footer .footer_bottom .left .regions .region .link:last-child {
+  margin-bottom: 0;
+  margin-top: 37px;
+}
+footer .footer_bottom .left .kitchens {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .footer_bottom .left .kitchens .title {
+  font-family: "Roboto Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #646464;
+  margin-bottom: 13px;
+}
+footer .footer_bottom .left .kitchens .kitchen {
+  margin-bottom: 13px;
+}
+footer .footer_bottom .left .kitchens .kitchen .link {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #B8B8B8;
+}
+footer .footer_bottom .left .kitchens .kitchen .link:last-child {
+  margin-bottom: 0;
+  margin-top: 37px;
+}
+footer .footer_bottom .right .about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+footer .footer_bottom .right .about .title {
+  font-family: "Roboto Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #646464;
+  margin-bottom: 13px;
+}
+footer .footer_bottom .right .about .item {
+  margin-bottom: 13px;
+}
+footer .footer_bottom .right .about .item .link {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #B8B8B8;
+}
+footer .footer_bottom .right .about .item .link:last-child {
+  margin-bottom: 0;
+  margin-top: 37px;
 }
 
 /*# sourceMappingURL=main.css.map */
