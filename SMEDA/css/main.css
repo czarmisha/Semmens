@@ -110,6 +110,10 @@ body {
   border-radius: 5px;
   background: #EFEFEF;
 }
+.header_bottom .some_list .item .link {
+  display: block;
+  height: 15px;
+}
 .header_bottom .some_list .item img {
   width: 70px;
   height: 15px;

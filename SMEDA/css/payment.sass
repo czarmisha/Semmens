@@ -1,0 +1,210 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Roboto Bold'
+    src: url(../fonts/Roboto/Roboto-Bold.ttf)
+
+@font-face
+    font-family: 'Roboto Medium'
+    src: url(../fonts/Roboto/Roboto-Medium.ttf)
+
+@font-face
+    font-family: 'Roboto Regular'
+    src: url(../fonts/Roboto/Roboto-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Bold'
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf)
+
+@font-face
+    font-family: 'Helvetica Regular'
+    src: url(../fonts/Helvetica/Helvetica.ttf)
+
+$R_bold: 'Roboto Bold'
+$R_med: 'Roboto Medium'
+$R_reg: 'Roboto Regular'
+$H_bold: 'Helvetica Bold'
+$H_reg: 'Helvetica Regular'
+
+body
+    // max-width: 1332px
+    width: 100%
+    margin: 0 auto
+// --------------------------------------------------------------------
+// ------------------------------ HEADER --------------------------------------
+.header_top
+    padding: 36px 30px 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    // max-width: 1332px
+    width: 100%
+    margin: 0 auto
+
+    .logo
+        width: 126px
+        height: 27px
+
+    .top_menu
+        display: flex
+
+        .link
+            font-family: $R_reg
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+            margin: 0 15px
+
+    .main_info
+        display: flex
+        align-items: flex-end
+
+        .cart
+            display: flex
+            flex-direction: column
+            align-items: center
+            span
+                font-family: $R_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 15px
+                line-height: 18px
+                color: #000000
+                display: block
+                // padding: 9px 20px
+                // border: 1px solid #EDEDED
+                // border-radius: 25px
+                margin-top: 6px
+
+        .user_info
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-left: 25px
+
+            .user_cab
+                width: 40px
+                height: 40px
+                border-radius: 50%
+
+            .user_log-in-out
+                font-family: $R_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 15px
+                line-height: 18px
+                color: #000000
+                display: block
+                // padding: 9px 20px
+                // border: 1px solid #EDEDED
+                // border-radius: 25px
+                margin-top: 6px
+
+// --------------------------------- MAIN ---------------------------
+body
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+main
+    flex-grow: 1
+    display: flex
+    // align-items: center
+    padding: 35px
+    justify-content: center
+    .payment
+        // margin-top: -100px
+        .title
+            margin-bottom: 18px
+            font-family: $R_bold
+            font-style: normal
+            font-weight: bold
+            font-size: 33px
+            line-height: 39px
+            color: #000000
+            text-align: center
+        .order_id
+            text-align: center
+            margin-bottom: 40px
+            font-family: $R_bold
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 23px
+            color: #B8B8B8
+        form
+            .form_top
+                padding: 42px 45px
+                border-radius: 6px
+                background: #F9F9F9
+                margin-bottom: 15px
+                width: 100%
+                input
+                    background: #FFFFFF
+                    border: 1px solid #D4D4D4
+                    border-radius: 4px
+                    font-family: $R_reg
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 20px
+                    line-height: 23px
+                    color: #B8B8B8
+                    padding: 13px 17px
+                    width: 100%
+                .inputs_row
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    margin: 22px 0
+                    input
+                        width: 47%
+                input[type='checkbox']
+                    width: auto
+                label
+                    position: relative
+                    width: 100%
+                    padding-left: 25px
+                    cursor: pointer
+                    display: flex
+                    height: 31px
+                    align-items: center
+                    font-family: $R_reg
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 19px
+                    color: #CCCCCC
+                    .checkmark
+                        position: absolute
+                        width: 31px
+                        height: 31px
+                        border: 1px solid #D4D4D4
+                        background: transparent
+                        left: 0
+                    input
+                        opacity: 0
+                        width: 0
+                        height: 0
+                        &:checked ~ .checkmark
+                            background: url('../images/checkbox.png')no-repeat center center, transparent                            
+            .form_bottom
+                width: 100%
+                button
+                    border: none
+                    border-radius: 24px
+                    background: #F9F9F9
+                    width: 100%
+                    font-family: $R_reg
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 19px
+                    color: #BDBDBD
+                    padding: 24px
+                
