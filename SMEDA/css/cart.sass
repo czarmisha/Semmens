@@ -1,0 +1,504 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Roboto Bold'
+    src: url(../fonts/Roboto/Roboto-Bold.ttf)
+
+@font-face
+    font-family: 'Roboto Medium'
+    src: url(../fonts/Roboto/Roboto-Medium.ttf)
+
+@font-face
+    font-family: 'Roboto Regular'
+    src: url(../fonts/Roboto/Roboto-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Bold'
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf)
+
+@font-face
+    font-family: 'Helvetica Regular'
+    src: url(../fonts/Helvetica/Helvetica.ttf)
+
+$R_bold: 'Roboto Bold'
+$R_med: 'Roboto Medium'
+$R_reg: 'Roboto Regular'
+$H_bold: 'Helvetica Bold'
+$H_reg: 'Helvetica Regular'
+
+body
+    // max-width: 1332px
+    width: 100%
+    margin: 0 auto
+// --------------------------------------------------------------------
+// ------------------------------ HEADER --------------------------------------
+.header_top
+    padding: 36px 30px 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    // max-width: 1332px
+    width: 100%
+    margin: 0 auto
+
+    .logo
+        width: 126px
+        height: 27px
+
+    .top_menu
+        display: flex
+
+        .link
+            font-family: $R_reg
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+            margin: 0 15px
+
+    .main_info
+        display: flex
+        align-items: flex-end
+
+        .cart
+            display: flex
+            flex-direction: column
+            align-items: center
+            span
+                font-family: $R_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 15px
+                line-height: 18px
+                color: #000000
+                display: block
+                // padding: 9px 20px
+                // border: 1px solid #EDEDED
+                // border-radius: 25px
+                margin-top: 6px
+
+        .user_info
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-left: 25px
+
+            .user_cab
+                width: 40px
+                height: 40px
+                border-radius: 50%
+
+            .user_log-in-out
+                font-family: $R_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 15px
+                line-height: 18px
+                color: #000000
+                display: block
+                // padding: 9px 20px
+                // border: 1px solid #EDEDED
+                // border-radius: 25px
+                margin-top: 6px
+
+// --------------------------------- MAIN ---------------------------
+.page_title
+    font-family: $R_bold
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 28px
+    color: #000000
+    margin-bottom: 17px
+    padding-left: 30px
+
+.page_info
+    padding: 15px 30px
+    border-top: 1px solid #B0B0B0
+    border-bottom: 1px solid #B0B0B0
+    display: flex
+    align-items: center
+    justify-content: flex-start
+
+    .time
+        display: flex
+        align-items: center
+        margin-right: 40px
+        span
+            font-family: $R_med
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 23px
+            color: #0EC645
+            margin-left: 6px
+
+    .price
+        span
+            font-family: $R_med
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 23px
+            color: #000000
+            opacity: 0.7
+    // --------------- products --------
+.products
+    .categories
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        padding: 13px 30px
+        .category
+            margin: 0 6px
+            &:first-child
+                margin-left: 0
+            &:last-child
+                margin-right: 0
+            .link
+                padding: 12px 9px
+                display: block
+                font-family: $R_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 19px
+                border-radius: 20px
+                color: #000000
+                &.active
+                    background: #EFEFEF
+
+    // ------ dropdown -----
+    .dropdown 
+        display: inline-block
+        position: relative
+
+    .dropdown__img
+        width: 15px
+        height: 9px
+        margin-left: 6px
+
+    .dropdown__text 
+        display: flex
+        align-items: center
+        font-family: $R_reg
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #000000
+        position: relative
+
+        &:after 
+            content: ''
+            position: absolute
+            top: 30%
+            right: -15px
+            display: block
+            width: 12px
+            height: 8px
+            // background: url(../images/arrow_down.png) no-repeat center center
+
+    .dropdown__input 
+        display: none
+
+    .dropdown__menu 
+        position: absolute
+        z-index: 55
+        width: 200%
+        background: #fff
+        top: 100%
+        left: -35px
+        padding: 10px 20px
+        margin: 2px 0 0 0
+        box-shadow: 0 0 6px 0 rgba(0,0,0,0.1)
+        list-style-type: none
+
+        li
+            font-family: $R_reg
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+            margin-bottom: 3px
+
+    .dropdown__input + .dropdown__menu 
+        display: none
+
+    .dropdown__input:checked + .dropdown__menu 
+        display: block
+
+    .cart_box
+        background: #F9F9F9
+        padding: 30px 30px
+        .title
+            font-family: $R_bold
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 28px
+            color: #000000
+            margin-right: 10px
+            margin-bottom: 25px
+            span
+                font-family: $R_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 24px
+                line-height: 28px
+                color: #B0B0B0
+        .cart_wrapper
+            display: flex
+            justify-content: space-between
+        .cart
+            width: 36%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            .cart_content
+                height: 93%
+                background: #F0F0F0
+                border-radius: 3px
+                padding: 25px 20px
+                display: flex
+                flex-direction: column
+                position: relative
+                .clear_cart
+                    position: absolute
+                    top: 17px
+                    right: 25px
+                    cursor: pointer
+                .title
+                    font-family: $H_bold
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 20px
+                    line-height: 18px
+                    color: #222222
+                    margin-bottom: 30px
+                .cart_detail
+                    border-bottom: 1px solid #E3E3E3
+                    padding-bottom: 15px
+                    margin-bottom: 25px
+                    .item
+                        .name
+                            font-family: $H_reg
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 16px
+                            line-height: 18px
+                            color: #222222
+                            padding-bottom: 16px
+                            .weight
+                                margin-left: 6px
+                                font-family: $H_reg
+                                font-style: normal
+                                font-weight: normal
+                                font-size: 12px
+                                line-height: 18px
+                                color: #B0B0B0    
+                                padding-bottom: 16px    
+
+                        .count
+                            font-family: $H_reg
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 12px
+                            line-height: 18px
+                            color: #B0B0B0 
+                            text-align: right
+                            width: 100%
+                            display: block
+                            padding-bottom: 16px
+                        .price
+                            font-family: $H_reg
+                            text-align: right
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 12px
+                            line-height: 18px
+                            color: #000000 
+                            width: 100%
+                            display: block
+                            padding-bottom: 16px
+                        .gift
+                            width: 100%
+                            display: block
+                            text-align: right     
+                            padding-bottom: 16px   
+                .delivery_smed
+                    margin-bottom: 5px
+                    flex-grow: 1
+                    border-bottom: 1px solid #E3E3E3
+                    .text
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        font-family: $H_reg
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 16px
+                        line-height: 18px
+                        color: #222222
+                        .price
+                            font-family: $H_reg
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 12px
+                            line-height: 18px
+                            color: #222222
+                    .comment
+                        font-family: $H_reg
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 12px
+                        line-height: 18px
+                        color: #222222
+                .cart_finaly
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    padding-top: 35px
+                    .left
+                        width: 50%
+                        display: flex
+                        flex-direction: column
+                        .text
+                            margin-bottom: 9px
+                            font-family: $H_reg
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 18px
+                            color: #B0B0B0
+                        .time
+                            font-family: $H_reg
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 25px
+                            line-height: 18px
+                            color: #000000
+                            img
+                                margin-left: 8px
+                                height: 14px
+                                width: 14px
+                    .right
+                        width: 50%
+                        display: flex
+                        flex-direction: column
+                        .text
+                            margin-bottom: 9px
+                            font-family: $H_reg
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 18px
+                            color: #B0B0B0
+                        .price
+                            font-family: $H_reg
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 25px
+                            line-height: 18px
+                            color: #000000
+            .cart_submit
+                width: 100%
+                background: #FCE000
+                border-radius: 3px
+                padding: 10px
+                text-align: center
+                font-family: $H_bold
+                font-style: normal
+                font-weight: bold
+                font-size: 16px
+                line-height: 18px
+                color: #000000
+
+        .products_list
+            width: 63%
+            .products_row
+                display: flex
+                align-items: center
+                flex-wrap: wrap
+                .product
+                    padding: 0 18px
+                    width: calc( 100% / 2 )
+                    margin-bottom: 36px
+                    &:nth-last-child(1)
+                        margin-bottom: 0px
+                    &:nth-last-child(2)
+                        margin-bottom: 0px
+                    .product_box
+                        background: #fff
+                        border-radius: 25px
+                        display: flex
+                        flex-direction: column
+                        width: 100%
+                        padding: 20px 10px
+                    .product_img
+                        width: 100%
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        margin-bottom: 15px
+                    .product_info
+                        margin-bottom: 13px
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        .product_name
+                            font-family: $H_bold
+                            font-style: normal
+                            font-weight: bold
+                            font-size: 18px
+                            line-height: 18px
+                            color: #222222
+                            margin-right: 8px
+                        .product_weight
+                            font-family: $H_reg
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 16px
+                            line-height: 18px
+                            color: #9A9A9A
+                        .product_price
+                            font-family: $H_reg
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 16px
+                            line-height: 18px
+                            color: #000000
+
+                    .product_description
+                        font-family: $H_reg
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 12px
+                        line-height: 18px
+                        color: #B0B0B0
+                        margin-bottom: 25px
+
+                    .add_to_cart
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        padding: 13px 15px
+                        background: #EFEFEF
+                        border-radius: 8px
+                        min-width: 45%
+                        margin: 0 auto
+                        .text
+                            font-family: $H_reg
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 16px
+                            line-height: 18px
+                            color: #000000
+                            margin-left: 20px

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ordering.css">
+    <title>Ordering</title>
+</head>
+<body>
+    <header>
+        <div class="header_top">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <ul class="top_menu">
+                <li class="item"><a href="#" class="link">Ресторанам</a></li>
+                <li class="item"><a href="#" class="link">Курьерам</a></li>
+                <li class="item"><a href="#" class="link">Компаниям</a></li>
+            </ul>
+            <div class="main_info">
+                <a href="#" class="cart">
+                    <img src="images/cart.png" alt="">
+                    <span>Корзина</span>
+                </a>
+                <div class="user_info">
+                    <a href="#" class="user_cab"><img src="images/user.png" alt=""></a>
+                    <a href="#" class="user_log-in-out">Войти</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="ordering">           
+            <div class="ordering_box">
+                <div class="ordering_wrapper">
+                    <div class="ordering_form">
+                       <div class="title">Получить заказ</div>
+                       <form action="">
+                           <div class="form_top">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11984.008160154168!2d69.25198194999999!3d41.330569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1611906176373!5m2!1sru!2s" width="600" height="280" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <div class="inputs">
+                                <input type="text" name="city" id="" placeholder="Tashkent">
+                                <div class="district_row">
+                                    <input type="text" name="district" id="" placeholder="Buyuk ipak street">
+                                    <input type="number" name="house" id="" placeholder="12">
+                                </div>
+                                <div class="time_row">
+                                    <input type="time" name="time" id="" placeholder="13:00">
+                                    <select name="type" id="">
+                                        <option value="1">Обычная доставка <span>в течении дня</span></option>
+                                        <option value="1">Необычная доставка <span>не в течении дня</span></option>
+                                    </select>
+                                </div>
+                                <p class="comment_text">Дату, время и стоимость доставки сообщит оператор при подтверждении заказа по телефону</p>
+                                <textarea name="comment" id="" cols="30" rows="10" placeholder="Добавить комментарий к заказу"></textarea>
+                            </div>
+                            <div class="pay">
+                                <p class="title">Оплата</p>
+                               <div class="checkbox_nal">
+                                    <input type="radio" name="pay_type" id="nal">
+                                    <label for="nal">Оплата наличными</label>
+                                    <span class="checkmark"></span>
+                               </div>
+                               <div class="checkbox_card">
+                                    <input type="radio" name="pay_type" id="card">
+                                    <label for="card">Картой онлайн</label>
+                                    <span class="checkmark"></span>
+                                    <p class="comment_text">Мы заморозим сумму заказа на вашей карте и спишем после 
+                                        доставки
+                                    </p>
+                                    <input type="number" name="price" id="">
+                                    <a href="" class="price_btn">Применить</a>
+                               </div>
+                                
+                            </div>
+                           </div>
+                           <div class="form_down">
+                                <div class="wrapper">
+                                    <div class="form_finaly">
+                                        <div class="left">
+                                            <span class="text">Время доставки</span>
+                                            <p class="time">45-55 мин <img src="images/pencil.png" alt=""></p>
+                                        </div>
+                                        <div class="right">
+                                            <span class="text">Итого</span>
+                                            <p class="price">215 000 UZS</p>
+                                        </div>
+                                    </div>
+                                    <div class="appliances">
+                                        <label for="count">Количество приборов</label>
+                                        <div class="count">
+                                            <span class="decrease"><img src="images/decrease.png" alt=""></span>
+                                            <input type="number" name="aplliances_count" id="count" value="1">
+                                            <span class="increase"><img src="images/increase.png" alt=""></span>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                           <button class="form_submit">Перейти к оплате</button>
+                       </form>
+                    </div>
+                    <div class="cart">
+                        <div class="cart_content">
+                            <span class="clear_cart"><img src="images/delete.png" alt=""></span>
+                            <h4 class="title">Мой заказ</h4>
+                            <table class="cart_detail">
+                                <tr class="item">
+                                    <td colspan="6"><h5 class="name">Чизбургер <span class="weight">165г</span></h5></td>
+                                    <td colspan="1"> <span class="count">5</span></td>
+                                    <td colspan="2"><span class="price">75 000 UZS</span></td>
+                                </tr>
+                                <tr class="item">
+                                    <td colspan="6"><h5 class="name">Чизбургер <span class="weight">165г</span></h5></td>
+                                    <td colspan="1"> <span class="count">5</span></td>
+                                    <td colspan="2"><span class="price">75 000 UZS</span></td>
+                                </tr>
+                                <tr class="item">
+                                    <td colspan="6"><h5 class="name">Чизбургер <span class="weight">165г</span></h5></td>
+                                    <td colspan="1"> <span class="count">5</span></td>
+                                    <td colspan="2"><span class="gift"><img src="images/gift.png" alt=""></span></td>
+                                </tr>
+
+                            </table>
+                            <div class="delivery_smed">
+                                <p class="text">Доставка SMED <span class="price">15 000 UZS</span></p>
+                                <p class="comment">Закажите еще на 50 000 UZS для доставки за 10 000 UZS</p>
+                            </div>
+                            <div class="cart_finaly">
+                                <div class="left">
+                                    <span class="text">Время доставки</span>
+                                    <p class="time">45-55 мин <img src="images/pencil.png" alt=""></p>
+                                </div>
+                                <div class="right">
+                                    <span class="text">Итого</span>
+                                    <p class="price">215 000 UZS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        const decrease = document.querySelector('.appliances .decrease');
+        const increase = document.querySelector('.appliances .increase');
+        const count = document.querySelector('.appliances #count');
+        decrease.addEventListener('click', () => {
+            count.value = Number(count.value) <= 1 ? count.value : Number(count.value) - 1;
+        });
+        increase.addEventListener('click', () => {
+            count.value = Number(count.value) >= 30 ? count.value : Number(count.value) + 1;
+        });
+    </script>
+</body>
+</html>

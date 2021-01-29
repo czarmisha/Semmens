@@ -1,0 +1,626 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: "Helvetica Regular";
+  src: url(../fonts/Helvetica/Helvetica.ttf);
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header_top {
+  padding: 36px 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.header_top .logo {
+  width: 126px;
+  height: 27px;
+}
+.header_top .top_menu {
+  display: flex;
+}
+.header_top .top_menu .link {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin: 0 15px;
+}
+.header_top .main_info {
+  display: flex;
+  align-items: flex-end;
+}
+.header_top .main_info .cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_top .main_info .cart span {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  display: block;
+  margin-top: 6px;
+}
+.header_top .main_info .user_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25px;
+}
+.header_top .main_info .user_info .user_cab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.header_top .main_info .user_info .user_log-in-out {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  display: block;
+  margin-top: 6px;
+}
+
+.ordering {
+  padding: 30px;
+  border-top: 1px solid #B0B0B0;
+}
+.ordering .ordering_box .ordering_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.ordering .ordering_box .cart {
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ordering .ordering_box .cart .cart_content {
+  height: 100%;
+  background: #F0F0F0;
+  border-radius: 3px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.ordering .ordering_box .cart .cart_content .clear_cart {
+  position: absolute;
+  top: 17px;
+  right: 25px;
+  cursor: pointer;
+}
+.ordering .ordering_box .cart .cart_content .title {
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  color: #222222;
+  margin-bottom: 30px;
+}
+.ordering .ordering_box .cart .cart_content .cart_detail {
+  border-bottom: 1px solid #E3E3E3;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+.ordering .ordering_box .cart .cart_content .cart_detail .item .name {
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  padding-bottom: 16px;
+}
+.ordering .ordering_box .cart .cart_content .cart_detail .item .name .weight {
+  margin-left: 6px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B0B0B0;
+  padding-bottom: 16px;
+}
+.ordering .ordering_box .cart .cart_content .cart_detail .item .count {
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B0B0B0;
+  text-align: right;
+  width: 100%;
+  display: block;
+  padding-bottom: 16px;
+}
+.ordering .ordering_box .cart .cart_content .cart_detail .item .price {
+  font-family: "Helvetica Regular";
+  text-align: right;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  width: 100%;
+  display: block;
+  padding-bottom: 16px;
+}
+.ordering .ordering_box .cart .cart_content .cart_detail .item .gift {
+  width: 100%;
+  display: block;
+  text-align: right;
+  padding-bottom: 16px;
+}
+.ordering .ordering_box .cart .cart_content .delivery_smed {
+  margin-bottom: 5px;
+  flex-grow: 1;
+  border-bottom: 1px solid #E3E3E3;
+}
+.ordering .ordering_box .cart .cart_content .delivery_smed .text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+}
+.ordering .ordering_box .cart .cart_content .delivery_smed .text .price {
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #222222;
+}
+.ordering .ordering_box .cart .cart_content .delivery_smed .comment {
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #222222;
+}
+.ordering .ordering_box .cart .cart_content .cart_finaly {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+.ordering .ordering_box .cart .cart_content .cart_finaly .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.ordering .ordering_box .cart .cart_content .cart_finaly .left .text {
+  margin-bottom: 9px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #B0B0B0;
+}
+.ordering .ordering_box .cart .cart_content .cart_finaly .left .time {
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 18px;
+  color: #000000;
+}
+.ordering .ordering_box .cart .cart_content .cart_finaly .left .time img {
+  margin-left: 8px;
+  height: 14px;
+  width: 14px;
+}
+.ordering .ordering_box .cart .cart_content .cart_finaly .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.ordering .ordering_box .cart .cart_content .cart_finaly .right .text {
+  margin-bottom: 9px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #B0B0B0;
+}
+.ordering .ordering_box .cart .cart_content .cart_finaly .right .price {
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 18px;
+  color: #000000;
+}
+.ordering .ordering_box .ordering_form {
+  width: 63%;
+  background: #F0F0F0;
+  padding: 30px;
+}
+.ordering .ordering_box .ordering_form .title {
+  margin-bottom: 14px;
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  color: #000000;
+}
+.ordering .ordering_box .ordering_form form .form_submit {
+  width: 100%;
+  background: #FCE000;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  color: #000000;
+}
+.ordering .ordering_box .ordering_form form .form_top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E3E3E3;
+}
+.ordering .ordering_box .ordering_form form .form_top iframe {
+  margin-bottom: 30px;
+}
+.ordering .ordering_box .ordering_form form .form_top .inputs {
+  width: 60%;
+}
+.ordering .ordering_box .ordering_form form .form_top .inputs input {
+  width: 100%;
+  background: #fff;
+  padding: 13px 20px;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #545454;
+}
+.ordering .ordering_box .ordering_form form .form_top .inputs input::placeholder {
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #545454;
+}
+.ordering .ordering_box .ordering_form form .form_top .inputs .district_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.ordering .ordering_box .ordering_form form .form_top .inputs .district_row input:first-child {
+  width: 78%;
+}
+.ordering .ordering_box .ordering_form form .form_top .inputs .district_row input:nth-child(2) {
+  width: 20%;
+}
+.ordering .ordering_box .ordering_form form .form_top .inputs .time_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ordering .ordering_box .ordering_form form .form_top .inputs .time_row input:first-child {
+  width: 42%;
+}
+.ordering .ordering_box .ordering_form form .form_top .inputs .time_row select {
+  background: #fff;
+  padding: 15px 20px;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  width: 42%;
+  color: #545454;
+}
+.ordering .ordering_box .ordering_form form .form_top .inputs .time_row select option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.ordering .ordering_box .ordering_form form .form_top .inputs .comment_text {
+  margin: 15px 0;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  color: #3E4A5E;
+  opacity: 0.7;
+}
+.ordering .ordering_box .ordering_form form .form_top .inputs textarea {
+  padding: 13px 17px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #545454;
+  width: 100%;
+  height: 80px;
+  resize: none;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay {
+  padding-left: 20px;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay .title {
+  margin-bottom: 24px;
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  color: #000000;
+  margin-left: -20px;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay label {
+  margin-left: 10px;
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  cursor: pointer;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay .checkbox_nal {
+  margin-bottom: 29px;
+  position: relative;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay .checkbox_nal .checkmark {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FCE000;
+  left: -13px;
+  top: -4%;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay .checkbox_nal input[type=radio] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay .checkbox_nal input[type=radio]:checked ~ .checkmark {
+  background: url("../images/knob.png") no-repeat center center, #FCE000;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay .checkbox_card {
+  position: relative;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay .checkbox_card .checkmark {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FCE000;
+  left: -13px;
+  top: -4%;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay .checkbox_card input[type=radio] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay .checkbox_card input[type=radio]:checked ~ .checkmark {
+  background: url("../images/knob.png") no-repeat center center, #FCE000;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay .checkbox_card .comment_text {
+  margin-bottom: 7px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #B0B0B0;
+  padding-left: 14px;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay .checkbox_card input[type=number] {
+  width: 40%;
+  background: #fff;
+  padding: 13px 20px;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #545454;
+  margin-left: 14px;
+}
+.ordering .ordering_box .ordering_form form .form_top .pay .checkbox_card .price_btn {
+  padding: 14px 17px;
+  text-align: center;
+  width: 15%;
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  background: #FCE000;
+  border: 1px solid #D4D4D4;
+  margin-left: -5px;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper {
+  display: flex;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .appliances {
+  padding: 20px 20px 20px 20px;
+  width: 40%;
+  border-left: 1px solid #E3E3E3;
+  display: flex;
+  align-items: center;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .appliances label {
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  margin-right: 8px;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .appliances .count {
+  display: flex;
+  align-items: center;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .appliances .count input[type=number] {
+  width: 60px;
+  padding: 2px;
+  background: #fff;
+  border: 1px solid #D4D4D4;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .appliances .count .decrease {
+  width: 43px;
+  background: transparent;
+  border: 1px solid #D4D4D4;
+  border-right: none;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .appliances .count .decrease img {
+  width: 15px;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .appliances .count .increase {
+  width: 43px;
+  height: 24px;
+  background: transparent;
+  border: 1px solid #D4D4D4;
+  border-left: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .appliances .count .increase img {
+  width: 15px;
+  height: 15px;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .form_finaly {
+  padding: 20px 20px 20px 0;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .form_finaly .left {
+  display: flex;
+  flex-direction: column;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .form_finaly .left .text {
+  margin-bottom: 9px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #B0B0B0;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .form_finaly .left .time {
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 18px;
+  color: #000000;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .form_finaly .left .time img {
+  margin-left: 8px;
+  height: 14px;
+  width: 14px;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .form_finaly .right {
+  display: flex;
+  flex-direction: column;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .form_finaly .right .text {
+  margin-bottom: 9px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #B0B0B0;
+}
+.ordering .ordering_box .ordering_form form .form_down .wrapper .form_finaly .right .price {
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 18px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=ordering.css.map */
