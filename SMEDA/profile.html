@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <div class="header_top">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <ul class="top_menu">
+                <li class="item"><a href="#" class="link">Ресторанам</a></li>
+                <li class="item"><a href="#" class="link">Курьерам</a></li>
+                <li class="item"><a href="#" class="link">Компаниям</a></li>
+            </ul>
+            <div class="main_info">
+                <a href="#" class="cart">
+                    <img src="images/cart.png" alt="">
+                    <span>Корзина</span>
+                </a>
+                <div class="user_info">
+                    <a href="#" class="user_cab"><img src="images/user.png" alt=""></a>
+                    <a href="#" class="user_log-in-out">Войти</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="profile">
+            <div class="sidebar_wrapper">
+                <ul class="sidebar">
+                    <li class="item title">Сардор Бахрамов</li>
+                    <li class="item"><a href="" class="link">Мои данные</a></li>
+                    <li class="item"><a href="" class="link">Мои данные</a></li>
+                    <li class="item"><a href="" class="link">Мои данные</a></li>
+                    <li class="item logout"><a href="" class="link">Выйти</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <form action="">
+                    <span class="close"><img src="images/close.png" alt=""></span>
+                    <h1 class="title">Мои данные</h1>
+                    <div class="name">
+                        <label for="#name">Имя</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="email">
+                        <label for="#email">Эл. почта</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="phone">
+                        <label for="#phone">Телефон</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div class="advertising">
+                        <span> Реклама и акции</span>
+                        <div class="checkboxes">
+                            <label>
+                                <input type="checkbox" name="email_notification" id="">
+                                Эл. почта
+                                <span class="checkmark"></span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="push_notification" id="">
+                                Push-уведомления и SMS
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <a href="" class="save">Сохранить изменения</a>
+                        <a href="" class="cancel">Отменить</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

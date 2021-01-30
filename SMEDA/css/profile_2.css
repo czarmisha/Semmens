@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: "Helvetica Regular";
+  src: url(../fonts/Helvetica/Helvetica.ttf);
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header_top {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.header_top .logo {
+  width: 126px;
+  height: 27px;
+}
+.header_top .top_menu {
+  display: flex;
+}
+.header_top .top_menu .link {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin: 0 15px;
+}
+.header_top .main_info {
+  display: flex;
+  align-items: flex-end;
+}
+.header_top .main_info .cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_top .main_info .cart span {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  display: block;
+  margin-top: 6px;
+}
+.header_top .main_info .user_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25px;
+}
+.header_top .main_info .user_info .user_cab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.header_top .main_info .user_info .user_log-in-out {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  display: block;
+  margin-top: 6px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+}
+
+.profile {
+  flex-grow: 1;
+  background: #F9F9F9;
+  padding: 70px 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.profile .sidebar_wrapper {
+  width: 25%;
+}
+.profile .sidebar {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 14px 0;
+}
+.profile .sidebar .item {
+  padding: 8px 14px;
+}
+.profile .sidebar .item .link {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.profile .sidebar .item.title {
+  font-family: "Roboto Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  border-bottom: 1px solid #E3E3E3;
+}
+.profile .sidebar .item.logout .link {
+  color: #FF0000;
+}
+.profile .content {
+  width: 65%;
+}
+.profile .content .wrapper {
+  background: #FFFFFF;
+  border-radius: 20px;
+  position: relative;
+  padding: 20px 30px;
+}
+.profile .content .wrapper .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.profile .content .wrapper .title {
+  margin-bottom: 25px;
+  font-family: "Roboto Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.profile .content .wrapper .addresses {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #FCE000;
+  border-radius: 4px;
+  padding: 8px 14px;
+  margin-bottom: 45px;
+}
+.profile .content .wrapper .addresses .address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: R_reg;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.profile .content .wrapper .addresses .address:last-child {
+  margin-bottom: 0;
+}
+.profile .content .wrapper .addresses .address .edit {
+  cursor: pointer;
+}
+.profile .content .wrapper .add {
+  display: inline-block;
+  text-align: center;
+  padding: 11px 22px;
+  background: #F1F0ED;
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-right: 22px;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=profile_2.css.map */

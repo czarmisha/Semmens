@@ -1,0 +1,191 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Roboto Bold'
+    src: url(../fonts/Roboto/Roboto-Bold.ttf)
+
+@font-face
+    font-family: 'Roboto Medium'
+    src: url(../fonts/Roboto/Roboto-Medium.ttf)
+
+@font-face
+    font-family: 'Roboto Regular'
+    src: url(../fonts/Roboto/Roboto-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Bold'
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf)
+
+@font-face
+    font-family: 'Helvetica Regular'
+    src: url(../fonts/Helvetica/Helvetica.ttf)
+
+$R_bold: 'Roboto Bold'
+$R_med: 'Roboto Medium'
+$R_reg: 'Roboto Regular'
+$H_bold: 'Helvetica Bold'
+$H_reg: 'Helvetica Regular'
+
+body
+    // max-width: 1332px
+    width: 100%
+    margin: 0 auto
+// --------------------------------------------------------------------
+// ------------------------------ HEADER --------------------------------------
+.header_top
+    padding: 20px 30px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    // max-width: 1332px
+    width: 100%
+    margin: 0 auto
+
+    .logo
+        width: 126px
+        height: 27px
+
+    .top_menu
+        display: flex
+
+        .link
+            font-family: $R_reg
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+            margin: 0 15px
+
+    .main_info
+        display: flex
+        align-items: flex-end
+
+        .cart
+            display: flex
+            flex-direction: column
+            align-items: center
+            span
+                font-family: $R_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 15px
+                line-height: 18px
+                color: #000000
+                display: block
+                // padding: 9px 20px
+                // border: 1px solid #EDEDED
+                // border-radius: 25px
+                margin-top: 6px
+
+        .user_info
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-left: 25px
+
+            .user_cab
+                width: 40px
+                height: 40px
+                border-radius: 50%
+
+            .user_log-in-out
+                font-family: $R_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 15px
+                line-height: 18px
+                color: #000000
+                display: block
+                // padding: 9px 20px
+                // border: 1px solid #EDEDED
+                // border-radius: 25px
+                margin-top: 6px
+
+// --------------------------------- MAIN ---------------------------
+body
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+main
+    flex-grow: 1
+    display: flex
+.profile
+    flex-grow: 1
+    background: #F9F9F9
+    padding: 70px 140px
+    display: flex
+    justify-content: space-between
+    .sidebar_wrapper
+        width: 25%
+    .sidebar
+        display: flex
+        flex-direction: column
+        background: #fff
+        box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        padding: 14px 0
+        .item
+            padding: 8px 14px
+            .link
+                font-family: $R_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 19px
+                color: #000000
+            &.title
+                font-family: $R_med
+                font-style: normal
+                font-weight: 500
+                font-size: 20px
+                line-height: 23px
+                color: #000000
+                border-bottom: 1px solid #E3E3E3
+            &.logout
+                .link
+                    color: #FF0000
+
+    .content
+        width: 65%
+        .wrapper
+            background: #FFFFFF
+            border-radius: 20px
+            position: relative
+            padding: 20px 30px
+            .close
+                position: absolute
+                top: 20px
+                right: 20px
+                cursor: pointer
+            .title
+                margin-bottom: 35px
+                font-family: $R_bold
+                font-style: normal
+                font-weight: bold
+                font-size: 24px
+                line-height: 28px
+                color: #000000
+            table
+                width: 100%
+                tr
+                    width: 100%
+                    border-bottom: 1px solid #E3E3E3
+                    padding: 10px 0
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    td
+                        font-family: $R_reg
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 16px
+                        line-height: 19px
+                        color: #000000
+                        &.status
+                            color: #A0A0A0
