@@ -1,0 +1,279 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Yandex Sans Text'
+    src: url(../fonts/YandexSansText-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Bold'
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf)
+
+@font-face
+    font-family: 'Helvetica Regular'
+    src: url(../fonts/Helvetica/Helvetica.ttf)
+
+$H_bold: 'Helvetica Bold'
+$H_reg: 'Helvetica Regular'
+$Yand: 'Yandex Sans Text'
+/* ----------------------- search --------------------- */
+.search
+    padding: 0 16px
+    margin: 15px 0
+    display: flex
+    align-items: center
+    width: 100%
+
+    .search__form
+        width: 100%
+        margin: 0 10px
+
+    .search__wrapper
+        width: 100%
+        position: relative
+
+        &::before
+            position: absolute
+            left: 10px
+            top: 15px
+            content: ''
+            background: url('../images/search.png') no-repeat center center
+            display: block
+            width: 20px
+            height: 20px
+            z-index: 2
+
+    .search__input
+        width: 100%
+        padding: 11px 11px 11px 30px
+        background: #fff
+        border: none
+        border: 2px solid #EBEBEB
+        border-radius: 8px
+
+        &:focus
+            outline: none
+
+        &::placeholder
+            font-family: 'Yandex Sans Text'
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: -0.3px
+            color: #222222
+            opacity: 0.35
+
+/* ----------------------- search end --------------------- */
+/* ----------------------- page info --------------------- */
+.page_info
+    padding: 25px 16px
+    .page_title
+        margin-bottom: 12px
+        text-align: left
+        width: 100%
+        font-family: $H_bold
+        font-style: normal
+        font-weight: bold
+        font-size: 30px
+        line-height: 34px
+        color: #000000
+        opacity: 0.87
+    .page_desc
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .time_price
+            display: flex
+            align-items: center
+            .price
+                background: #FCFCFC
+                border-radius: 22px
+                padding: 13px
+                font-family: $H_reg
+                font-style: normal
+                font-weight: 500
+                font-size: 20px
+                line-height: 23px
+                color: #000
+                opacity: 0.7
+            .time
+                display: flex
+                align-items: center
+                background: #FCFCFC
+                border-radius: 22px
+                padding: 13px
+                font-family: $H_reg
+                font-style: normal
+                font-weight: 500
+                font-size: 20px
+                line-height: 23px
+                color: #0EC645
+                margin-right: 19px
+                img
+                    width: 22px
+                    height: 22px
+                    margin-right: 6px
+// ----------------------------- product_list ---------------------
+.product_list
+    background: #FCFCFC
+    border-top-left-radius: 25px
+    border-top-right-radius: 25px
+    padding: 20px 16px
+
+        /* ----------------------- filters --------------------- */
+    .filters 
+        width: 100%
+        margin: 10px 0 35px
+
+        .filters__slides 
+            display: flex
+            overflow-x: auto
+            scroll-snap-type: x mandatory
+            scroll-behavior: smooth
+            -webkit-overflow-scrolling: touch
+
+            &::-webkit-scrollbar 
+                display: none
+        
+        .filters__slide 
+            scroll-snap-align: start
+            flex-shrink: 0
+            width: auto
+            padding: 8px 10px
+            margin-right: 6px
+            border-radius: 17px
+            transform-origin: center center
+            transform: scale(1)
+            transition: transform 0.5s
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: center
+            &.active
+                background: #EFEFEF
+
+        .filters__btn
+            font-family: $H_reg
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: #222222
+
+            img
+                width: 16px
+                height: 16px
+        /* ------------------ filters end ---------------- */
+    .products
+        padding: 0 16px
+        margin-top: 20px
+        .products_box
+            display: flex
+            flex-direction: column
+            width: 100%
+            .product
+                width: 100%
+                display: flex
+                margin-bottom: 25px
+                background: #ffffff
+                .product_img
+                    background: #F6F6F6
+                    border-radius: 8px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    padding: 15px
+                    margin-right: 9px
+                .product_description
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    width: 100%
+                    padding: 5px 0
+                    .product_name
+                        font-family: $H_bold
+                        font-style: normal
+                        font-weight: bold
+                        font-size: 20px
+                        line-height: 18px
+                        color: #222222
+                    .bottom
+                        display: flex
+                        align-items: center
+                        width: 100%
+                        justify-content: space-between
+                    .product_price
+                        font-family: $H_reg
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 16px
+                        line-height: 18px
+                        color: #9A9A9A
+                    .product_add
+                        background: #EFEFEF
+                        border-radius: 8px
+                        padding: 8px
+                        img
+                            width: 20px
+                            height: 20px
+    // ----------- products_2 ----------
+    .products_2
+        padding: 0 16px
+        margin-top: 20px
+        .products_box
+            display: flex
+            width: 100%
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+            .product
+                width: 49%
+                background: #fff
+                display: flex
+                flex-direction: column
+                align-items: center
+                .product_img
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    padding: 15px
+                    width: 100%
+                    margin-bottom: 7px
+                .product_name
+                    margin-bottom: 7px
+                    font-family: $H_bold
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 17px
+                    line-height: 18px
+                    color: #222222
+                .product_price
+                    margin-bottom: 20px
+                    font-family: $H_reg
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 18px
+                    color: #9A9A9A
+                .product_add
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    background: #EFEFEF
+                    border-radius: 8px
+                    font-family: $H_reg
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 16px
+                    color: #000000
+                    padding: 10px 7px
+                    img
+                        width: 20px
+                        height: 20px
+                        margin-right: 8px

@@ -118,7 +118,7 @@ $Yand: 'Yandex Sans Text'
     &::before
         position: absolute
         left: 130px
-        top: 15px
+        top: 13px
         content: ''
         background: url('../images/search.png') no-repeat center center
         display: block
@@ -300,7 +300,7 @@ $Yand: 'Yandex Sans Text'
                     font-family: $H_reg
                     font-style: normal
                     font-weight: 500
-                    font-size: 16px
+                    font-size: 11px
                     line-height: 19px
                     color: #0EC645
                     .time_img
@@ -317,7 +317,7 @@ $Yand: 'Yandex Sans Text'
                     font-family: $H_reg
                     font-style: normal
                     font-weight: 500
-                    font-size: 16px
+                    font-size: 10px
                     line-height: 19px
                     color: #222222
                     padding: 3px 7px
@@ -325,13 +325,13 @@ $Yand: 'Yandex Sans Text'
                     border-radius: 11px
 
             .name
-                font-family: $H_reg
+                font-family: $H_bold
                 font-style: normal
-                font-weight: 500
+                font-weight: bold
                 font-size: 20px
                 line-height: 23px
-                margin-bottom: 2px
                 color: #000000
+                margin-bottom: 5px
                 width: 100%
                 text-align: left
                 margin-top: 10px
@@ -390,7 +390,7 @@ $Yand: 'Yandex Sans Text'
                     font-family: $H_reg
                     font-style: normal
                     font-weight: 500
-                    font-size: 16px
+                    font-size: 11px
                     line-height: 19px
                     color: #0EC645
                     .time_img
@@ -407,7 +407,7 @@ $Yand: 'Yandex Sans Text'
                     font-family: $H_reg
                     font-style: normal
                     font-weight: 500
-                    font-size: 16px
+                    font-size: 10px
                     line-height: 19px
                     color: #222222
                     padding: 3px 7px
@@ -415,15 +415,186 @@ $Yand: 'Yandex Sans Text'
                     border-radius: 11px
 
             .name
-                font-family: $H_reg
+                font-family: $H_bold
                 font-style: normal
-                font-weight: 500
+                font-weight: bold
                 font-size: 20px
                 line-height: 23px
-                margin-bottom: 2px
                 color: #000000
+                margin-bottom: 4px
                 width: 100%
                 text-align: left
                 margin-top: 10px
 
-/* ------------------ restaurants slider ---------------- */
+/* ------------------ categories slider ---------------- */
+.categories_slider
+    width: 100%
+    padding: 0 0 0 16px
+    margin: 0 0 10px 0
+    .title
+        font-family: $H_bold
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 21px
+        color: #000000
+        opacity: 0.87
+        margin-bottom: 16px
+        margin-top: 20px
+    .categories__slides 
+        display: flex
+        overflow-x: auto
+        scroll-snap-type: x mandatory
+        scroll-behavior: smooth
+        -webkit-overflow-scrolling: touch
+
+        &::-webkit-scrollbar 
+            display: none
+    
+    .categories__slide 
+        scroll-snap-align: start
+        flex-shrink: 0
+        width: auto
+        padding: 20px
+        margin-right: 6px
+        border-radius: 8px
+        transform-origin: center center
+        transform: scale(1)
+        transition: transform 0.5s
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        background: #EFEFEF
+
+    .categories__btn
+        font-family: $H_reg
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        text-align: center
+        color: #000000
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        img
+            margin-right: 14px
+// ------------------------- products -----------------
+.products
+    padding: 0 16px
+    margin-top: 20px
+    .title
+        font-family: $H_bold
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 23px
+        color: #000000
+        opacity: 0.87
+        margin-bottom: 25px
+        span
+            font-family: $H_reg
+            padding: 6px 9px
+            background: #EFEFEF
+            border-radius: 10px
+            font-style: normal
+            font-weight: 500
+            font-size: 9px
+            margin-left: 7px
+            line-height: 11px
+            color: #D79C04
+    .products_box
+        display: flex
+        flex-direction: column
+        width: 100%
+        .product
+            width: 100%
+            display: flex
+            margin-bottom: 25px
+            .product_img
+                background: #F6F6F6
+                border-radius: 8px
+                display: flex
+                align-items: center
+                justify-content: center
+                padding: 15px
+                margin-right: 9px
+            .product_description
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                width: 100%
+                padding: 5px 0
+                .product_name
+                    font-family: $H_bold
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 20px
+                    line-height: 18px
+                    color: #222222
+                .bottom
+                    display: flex
+                    align-items: center
+                    width: 100%
+                    justify-content: space-between
+                .product_price
+                    font-family: $H_reg
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 18px
+                    color: #9A9A9A
+                .product_add
+                    background: #EFEFEF
+                    border-radius: 8px
+                    padding: 8px
+                    img
+                        width: 20px
+                        height: 20px
+// ---------------------------- categories_table -------------------
+.categories_table
+    padding: 0 16px
+    margin-bottom: 25px
+    display: flex
+    flex-direction: column
+    .top
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .categories__btn
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 20px 18px
+            background: #EEEEF0
+            border-radius: 7px
+            font-family: $H_reg
+            font-style: normal
+            font-weight: normal
+            font-size: 13px
+            line-height: 15px
+            color: #000000
+            width: 49%
+            margin-bottom: 13px
+    .bottom
+        position: relative
+        img
+            position: absolute
+            top: 20px
+            left: 15px
+
+        .categories__btn
+            width: 100%
+            padding: 20px 18px
+            background: #EEEEF0
+            border-radius: 7px
+            font-family: $H_reg
+            font-style: normal
+            font-weight: normal
+            font-size: 13px
+            line-height: 15px
+            color: #000000
+            display: flex
+            justify-content: center
