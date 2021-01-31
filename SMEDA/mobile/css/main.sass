@@ -1,0 +1,429 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Yandex Sans Text'
+    src: url(../fonts/YandexSansText-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Bold'
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf)
+
+@font-face
+    font-family: 'Helvetica Regular'
+    src: url(../fonts/Helvetica/Helvetica.ttf)
+
+$H_bold: 'Helvetica Bold'
+$H_reg: 'Helvetica Regular'
+$Yand: 'Yandex Sans Text'
+
+/* ----------------------- logo title --------------------- */
+.logo
+    text-align: center
+    margin: 15px 0 12px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 16px
+    .header_contact
+        display: flex
+        align-items: center
+        .chat
+            margin-right: 14px
+        .phone
+            margin-right: 14px
+// ------ dropdown -----
+.dropdown 
+    display: inline-block
+    position: relative
+
+    .dropdown__img
+        width: 15px
+        height: 9px
+        margin-left: 6px
+
+    .dropdown__text 
+        display: flex
+        align-items: center
+        font-family: 'Yandex Sans Text'
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #000000
+        position: relative
+
+        &:after 
+            content: ''
+            position: absolute
+            top: 30%
+            right: -15px
+            display: block
+            width: 12px
+            height: 8px
+            // background: url(../images/arrow_down.png) no-repeat center center
+
+    .dropdown__input 
+        display: none
+
+    .dropdown__menu 
+        position: absolute
+        z-index: 555
+        width: 150%
+        background: #fff
+        top: 100%
+        padding: 10px 20px
+        margin: 2px 0 0 0
+        box-shadow: 0 0 6px 0 rgba(0,0,0,0.1)
+        list-style-type: none
+
+        li
+            font-family: 'Yandex Sans Text'
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+            margin-bottom: 3px
+
+    .dropdown__input + .dropdown__menu 
+        display: none
+
+    .dropdown__input:checked + .dropdown__menu 
+        display: block
+/* ----------------------- logo title end --------------------- */
+/* ----------------------- search --------------------- */
+.search
+    padding: 0 16px
+    margin: 10px 0 0 0
+    width: 100%
+
+.search__form
+    width: 100%
+
+.search__wrapper
+    width: 100%
+    position: relative
+    .dropdown
+        position: absolute
+        top: 13px
+        left: 8px
+        z-index: 333
+
+    &::before
+        position: absolute
+        left: 130px
+        top: 15px
+        content: ''
+        background: url('../images/search.png') no-repeat center center
+        display: block
+        width: 20px
+        height: 20px
+        z-index: 2
+
+.search__input
+    width: 100%
+    padding: 11px 11px 11px 147px
+    background: #fff
+    border: none
+    border: 6px solid #EBEBEB
+    border-radius: 8px
+
+    &:focus
+        outline: none
+
+    &::placeholder
+        font-family: 'Yandex Sans Text'
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        letter-spacing: -0.3px
+        color: #222222
+        opacity: 0.35
+
+/* ----------------------- search end --------------------- */
+.header_bottom
+    padding: 10px 16px
+
+    .some_list
+        display: flex
+        align-items: center
+
+        .item
+            margin: 0 5px
+            padding: 7px 5px
+            border-radius: 5px
+            background: #EFEFEF
+            .link
+                display: block
+                height: 15px
+            img
+                width: 70px
+                height: 15px
+            &:first-child
+                margin-left: 0
+/* ----------------------- filters --------------------- */
+.filters 
+    width: 100%
+    padding: 0 0 0 16px
+    margin: 0 0 10px 0
+    .filters__slides 
+        display: flex
+        overflow-x: auto
+        scroll-snap-type: x mandatory
+        scroll-behavior: smooth
+        -webkit-overflow-scrolling: touch
+
+        &::-webkit-scrollbar 
+            display: none
+    
+    .filters__slide 
+        scroll-snap-align: start
+        flex-shrink: 0
+        width: auto
+        padding: 8px 10px
+        margin-right: 6px
+        border-radius: 8px
+        transform-origin: center center
+        transform: scale(1)
+        transition: transform 0.5s
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        background: #EFEFEF
+
+    .filters__btn
+        font-family: 'Yandex Sans Text'
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        text-transform: uppercase
+        color: #222222
+        opacity: 0.87
+
+        img
+            width: 16px
+            height: 16px
+/* ------------------ filters end ---------------- */
+/* ------------------ main slider ---------------- */
+.mainSlider 
+    
+    width: 100%
+    margin: 0 0 10px 0
+    padding: 0 0 0 16px
+    position: relative
+    .info_slide-title
+        font-family: 'Yandex Sans Text'
+        font-style: normal
+        font-weight: bold
+        font-size: 14px
+        line-height: 16px
+        color: #000
+        opacity: 0.87
+        margin-bottom: 8px
+        max-width: 92px
+        display: block
+        
+    .info_slide-text
+        font-family: 'Yandex Sans Text'
+        font-style: normal
+        display: inline-block
+        font-weight: bold
+        border-radius: 4px
+        font-size: 14px
+        line-height: 17px
+        color: #000
+        padding: 3px 6px
+        background: black
+        text-transform: uppercase
+
+.mainSlider__slides 
+    display: flex
+    overflow-x: auto
+    scroll-snap-type: x mandatory
+    scroll-behavior: smooth
+    -webkit-overflow-scrolling: touch
+
+    &::-webkit-scrollbar 
+        display: none
+
+.mainSlider__slide 
+    scroll-snap-align: start
+    position: relative
+    flex-shrink: 0
+    width: 110px
+    height: 110px
+    margin-right: 10px
+    border-radius: 8px
+    transform-origin: center center
+    transform: scale(1)
+    transition: transform 0.5s
+    position: relative
+    .content
+        position: absolute
+        top: 15px
+        left: 15px
+    
+    img
+        width: 100%
+
+/* ------------------ main slider ---------------- */
+/* ------------------ some_restaurant ---------------- */
+.some_rastaurant
+    padding: 0 16px
+    margin-bottom: 15px
+    .restaurant
+            width: 100%
+
+            .restaurant-img
+                width: 100%
+                position: relative
+                img
+                    width: 100%
+                .time
+                    position: absolute
+                    display: flex
+                    bottom: 0
+                    right: -2px
+                    background: #fff
+                    padding: 3px 13px
+                    border-radius: 11px
+                    font-family: $H_reg
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 19px
+                    color: #0EC645
+                    .time_img
+                        margin-right: 7px
+                        width: 16px
+                        height: 16px
+
+            .restaurant-info
+                display: flex
+                align-items: center
+                width: 100%
+                justify-content: flex-start
+                .price
+                    font-family: $H_reg
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 19px
+                    color: #222222
+                    padding: 3px 7px
+                    background: #EFEFEF
+                    border-radius: 11px
+
+            .name
+                font-family: $H_reg
+                font-style: normal
+                font-weight: 500
+                font-size: 20px
+                line-height: 23px
+                margin-bottom: 2px
+                color: #000000
+                width: 100%
+                text-align: left
+                margin-top: 10px
+/* ------------------ restaurants slider ---------------- */
+.restaurants
+    width: 100%
+    margin: 0 0 10px 0
+    padding: 0 0 0 16px
+    position: relative
+    .title
+        font-family: $H_bold
+        font-style: normal
+        font-weight: bold
+        font-size: 19px
+        line-height: 19px
+        color: #222222
+        margin-bottom: 10px
+
+    .restaurants__slides 
+        display: flex
+        overflow-x: auto
+        scroll-snap-type: x mandatory
+        scroll-behavior: smooth
+        -webkit-overflow-scrolling: touch
+
+        &::-webkit-scrollbar 
+            display: none
+
+    .restaurants__slide 
+        scroll-snap-align: start
+        position: relative
+        flex-shrink: 0
+        width: 70%
+        margin-right: 10px
+        border-radius: 8px
+        transform-origin: center center
+        transform: scale(1)
+        transition: transform 0.5s
+        position: relative
+        .restaurant
+            width: 100%
+
+            .restaurant-img
+                width: 100%
+                position: relative
+                img
+                    width: 100%
+                .time
+                    position: absolute
+                    display: flex
+                    bottom: 0
+                    right: -2px
+                    background: #fff
+                    padding: 3px 13px
+                    border-radius: 11px
+                    font-family: $H_reg
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 19px
+                    color: #0EC645
+                    .time_img
+                        margin-right: 7px
+                        width: 16px
+                        height: 16px
+
+            .restaurant-info
+                display: flex
+                align-items: center
+                width: 100%
+                justify-content: flex-start
+                .price
+                    font-family: $H_reg
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 19px
+                    color: #222222
+                    padding: 3px 7px
+                    background: #EFEFEF
+                    border-radius: 11px
+
+            .name
+                font-family: $H_reg
+                font-style: normal
+                font-weight: 500
+                font-size: 20px
+                line-height: 23px
+                margin-bottom: 2px
+                color: #000000
+                width: 100%
+                text-align: left
+                margin-top: 10px
+
+/* ------------------ restaurants slider ---------------- */
