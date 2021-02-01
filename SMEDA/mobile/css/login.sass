@@ -1,0 +1,135 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Yandex Sans Text'
+    src: url(../fonts/YandexSansText-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Bold'
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf)
+
+@font-face
+    font-family: 'Helvetica Regular'
+    src: url(../fonts/Helvetica/Helvetica.ttf)
+
+$H_bold: 'Helvetica Bold'
+$H_reg: 'Helvetica Regular'
+$Yand: 'Yandex Sans Text'
+
+.login
+    padding: 20px 16px
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    .page_title
+        width: 100%
+        margin: 0 0 20px 0
+        font-family: $H_bold
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 23px
+        text-align: center
+        color: #000000
+        position: relative
+        .close
+            position: absolute
+            width: 18px
+            height: 18px
+            display: block
+            top: 0
+            right: 0
+    .content
+        flex-grow: 1
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-top: 20px
+        .login_form
+            display: flex
+            flex-direction: column
+            label
+                margin-bottom: 10px
+                font-family: $H_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 17px
+                color: #222222
+            .input
+                width: 100%
+                position: relative
+                margin-bottom: 20px
+                &::before
+                    content: '+998'
+                    display: inline-block
+                    position: absolute
+                    left: 15px
+                    top: 12px
+                    font-family: $H_reg
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 19px
+                    color: #222222
+
+                input
+                    border: none
+                    background: #F4F4F4
+                    border-radius: 4px
+                    padding: 12px 5px 12px 54px
+                    width: 100%
+                    font-family: $H_reg
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 19px
+                    color: #222222
+            .help_text
+                font-family: $H_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 17px
+                color: #222222
+                opacity: 0.5
+                margin-bottom: 20px
+            .registration
+                margin-bottom: 60px
+                font-family: $H_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 19px
+                color: #222222
+            button
+                width: 100%
+                border: none
+                text-align: center
+                padding: 15px
+                background: #FFDA34
+                border-radius: 6px
+                font-family: $H_bold
+                font-style: normal
+                font-weight: bold
+                font-size: 18px
+                line-height: 21px
+                color: #000000
+        .with_mail
+            width: 100%
+            border: none
+            text-align: center
+            padding: 15px
+            background: #FFDA34
+            border-radius: 6px
+            font-family: $H_bold
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 21px
+            color: #000000

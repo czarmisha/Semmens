@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url(../fonts/YandexSansText-Regular.ttf);
+}
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: "Helvetica Regular";
+  src: url(../fonts/Helvetica/Helvetica.ttf);
+}
+.add_card {
+  padding: 60px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.add_card .add_card_form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.add_card .add_card_form .add {
+  width: 100%;
+  border: none;
+  text-align: center;
+  padding: 15px;
+  background: #FFDA34;
+  border-radius: 6px;
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.add_card .add_card_form .page_title {
+  width: 100%;
+  margin: 0 0 90px 0;
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.add_card .add_card_form .input_card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.add_card .add_card_form .input_card label {
+  margin-bottom: 5px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.add_card .add_card_form .input_card input {
+  padding: 13px;
+  width: 100%;
+  background: #F4F4F4;
+  border-radius: 4px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+  border: none;
+}
+.add_card .add_card_form .input_card img {
+  position: absolute;
+  right: 13px;
+  top: 33px;
+  width: 30px;
+  height: 18px;
+}
+.add_card .add_card_form .info {
+  margin-top: 21px;
+  font-family: "Helvetica Regular";
+  font-size: 14px;
+  line-height: 20px;
+  color: #222222;
+  opacity: 0.5;
+}
+.add_card .add_card_form .input_card_detail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.add_card .add_card_form .input_card_detail .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+.add_card .add_card_form .input_card_detail .left .month label {
+  margin-bottom: 7px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.add_card .add_card_form .input_card_detail .left .month input {
+  background: #EFEFEF;
+  padding: 18px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.add_card .add_card_form .input_card_detail .left .slash {
+  margin: 18px 10px 0;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.add_card .add_card_form .input_card_detail .left .year label {
+  margin-bottom: 7px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.add_card .add_card_form .input_card_detail .left .year input {
+  background: #EFEFEF;
+  padding: 18px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.add_card .add_card_form .input_card_detail .right {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 8px;
+  background: #F4F4F4;
+  border-radius: 4px;
+}
+.add_card .add_card_form .input_card_detail .right label {
+  margin-bottom: 7px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.add_card .add_card_form .input_card_detail .right .input_cvv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add_card .add_card_form .input_card_detail .right .input_cvv input {
+  background: #FFFFFF;
+  padding: 12px 10px;
+  margin-right: 10px;
+  width: 54px;
+  height: 40px;
+  border: none;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.add_card .add_card_form .input_card_detail .right .input_cvv span {
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: #222222;
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=add_card.css.map */

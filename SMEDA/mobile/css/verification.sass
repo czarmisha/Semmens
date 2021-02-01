@@ -1,0 +1,115 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Yandex Sans Text'
+    src: url(../fonts/YandexSansText-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Bold'
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf)
+
+@font-face
+    font-family: 'Helvetica Regular'
+    src: url(../fonts/Helvetica/Helvetica.ttf)
+
+$H_bold: 'Helvetica Bold'
+$H_reg: 'Helvetica Regular'
+$Yand: 'Yandex Sans Text'
+
+.verification
+    padding: 60px 16px 20px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 100vh
+    .send_again
+        width: 100%
+        border: none
+        text-align: center
+        padding: 15px
+        background: #FFDA34
+        border-radius: 6px
+        font-family: $H_bold
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 21px
+        color: #000000
+    .top
+        display: flex
+        flex-direction: column
+        align-items: center
+        .text_1
+            margin-bottom: 10px
+            font-family: $H_reg
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 18px
+            color: #000000
+        .text_2
+            margin-bottom: 10px
+            font-family: $H_reg
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: #000000
+            span
+                font-weight: bold
+        .another_number
+            text-decoration: underline
+            font-family: $H_reg
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: #000000
+        .page_title
+            width: 100%
+            margin: 0 0 90px 0
+            font-family: $H_bold
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 23px
+            text-align: center
+            color: #000000
+            position: relative
+            .back
+                position: absolute
+                left: 0
+                top: 0
+                width: 10px
+                height: 17px
+                display: block
+                img
+                    width: 10px
+                    height: 17px
+        .verification_form
+            margin-top: 25px
+            display: flex
+            align-items: center
+            justify-content: center
+            input
+                background: #EFEFEF
+                padding: 24px
+                font-family: $H_reg
+                font-style: normal
+                font-weight: normal
+                font-size: 20px
+                line-height: 16px
+                color: rgba(0, 0, 0, 0.5)
+                margin: 0 6px
+                width: 60px
+                height: 60px
+                border-radius: 8px
+                display: flex
+                align-items: center
+                justify-content: center
+                border: none

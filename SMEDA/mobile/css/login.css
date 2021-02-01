@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url(../fonts/YandexSansText-Regular.ttf);
+}
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: "Helvetica Regular";
+  src: url(../fonts/Helvetica/Helvetica.ttf);
+}
+.login {
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.login .page_title {
+  width: 100%;
+  margin: 0 0 20px 0;
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+  position: relative;
+}
+.login .page_title .close {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: block;
+  top: 0;
+  right: 0;
+}
+.login .content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.login .content .login_form {
+  display: flex;
+  flex-direction: column;
+}
+.login .content .login_form label {
+  margin-bottom: 10px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222222;
+}
+.login .content .login_form .input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.login .content .login_form .input::before {
+  content: "+998";
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.login .content .login_form .input input {
+  border: none;
+  background: #F4F4F4;
+  border-radius: 4px;
+  padding: 12px 5px 12px 54px;
+  width: 100%;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.login .content .login_form .help_text {
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222222;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+.login .content .login_form .registration {
+  margin-bottom: 60px;
+  font-family: "Helvetica Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.login .content .login_form button {
+  width: 100%;
+  border: none;
+  text-align: center;
+  padding: 15px;
+  background: #FFDA34;
+  border-radius: 6px;
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.login .content .with_mail {
+  width: 100%;
+  border: none;
+  text-align: center;
+  padding: 15px;
+  background: #FFDA34;
+  border-radius: 6px;
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url(../fonts/YandexSansText-Regular.ttf);
+}
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: "Helvetica Regular";
+  src: url(../fonts/Helvetica/Helvetica.ttf);
+}
+.thanks {
+  padding: 35px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 100%;
+}
+.thanks .wrapper {
+  width: 100%;
+}
+.thanks .wrapper .page_title {
+  width: 100%;
+  margin: 0 0 30px 0;
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+  position: relative;
+}
+.thanks .wrapper .page_title .cancel {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: block;
+  top: 0;
+  right: 0;
+}
+.thanks .wrapper .text_top {
+  padding: 34px;
+  text-align: center;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  background: #F4F4F4;
+}
+.thanks .wrapper .text_top .title {
+  margin-bottom: 12px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #222222;
+  opacity: 0.87;
+}
+.thanks .wrapper .text_top .text {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #222222;
+  opacity: 0.87;
+}
+.thanks .wrapper .text_bottom {
+  border-radius: 4px;
+  background: #F4F4F4;
+  margin-bottom: 20px;
+}
+.thanks .wrapper .text_bottom .text {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #222222;
+  opacity: 0.87;
+  padding: 22px;
+  text-align: center;
+}
+.thanks .wrapper .text_bottom .text span {
+  font-weight: bold;
+}
+.thanks .wrapper .support {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #222222;
+  opacity: 0.87;
+}
+.thanks .wrapper .phone {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #222222;
+  opacity: 0.87;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.thanks .back {
+  width: 100%;
+  border: none;
+  text-align: center;
+  padding: 15px;
+  background: #FFDA34;
+  border-radius: 6px;
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=thanks.css.map */
