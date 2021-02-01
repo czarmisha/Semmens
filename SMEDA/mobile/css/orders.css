@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url(../fonts/YandexSansText-Regular.ttf);
+}
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: "Helvetica Regular";
+  src: url(../fonts/Helvetica/Helvetica.ttf);
+}
+.orders {
+  padding: 30px 16px;
+}
+.orders .page_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.orders .page_title .left {
+  position: absolute;
+  left: 0;
+}
+.orders .page_title .left a {
+  width: 14px;
+  height: 24px;
+}
+.orders .page_title .center h1 {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #222222;
+  opacity: 0.87;
+}
+.orders .page_title .right {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.orders .page_title .right .chat {
+  margin-right: 14px;
+}
+.orders .search {
+  margin: 10px 0;
+  width: 100%;
+}
+.orders .search__form {
+  width: 100%;
+}
+.orders .search__wrapper {
+  width: 100%;
+  position: relative;
+}
+.orders .search__wrapper::before {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  content: "";
+  background: url("../images/search.png") no-repeat center center;
+  display: block;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+}
+.orders .search__input {
+  width: 100%;
+  padding: 11px 11px 11px 38px;
+  background: #F4F4F4;
+  border: none;
+  border-radius: 3px;
+}
+.orders .search__input:focus {
+  outline: none;
+}
+.orders .search__input::placeholder {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.3px;
+  color: #222222;
+  opacity: 0.35;
+}
+.orders .orders_list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.orders .orders_list .order_item {
+  position: relative;
+  width: 100%;
+  padding: 14px 30px 14px 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+.orders .orders_list .order_item::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 14px;
+  background: url("../images/arrow_right.png") no-repeat center center;
+  position: absolute;
+  right: 0;
+  top: 46%;
+}
+.orders .orders_list .order_item:last-child {
+  border: none;
+}
+.orders .orders_list .order_item .order {
+  display: flex;
+  justify-content: space-between;
+}
+.orders .orders_list .order_item .order .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.orders .orders_list .order_item .order .right .order_time_date {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #222222;
+  opacity: 0.87;
+}
+.orders .orders_list .order_item .order .right .order_status {
+  padding: 7px 10px;
+  border-radius: 14px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.87;
+}
+.orders .orders_list .order_item .order .right .order_status.delivered {
+  background: #5FBA8F;
+}
+.orders .orders_list .order_item .order .right .order_status.canceled {
+  background: #DD5959;
+}
+.orders .orders_list .order_item .order .right .order_status.on_way {
+  background: #E8C189;
+}
+.orders .orders_list .order_item .order .right .order_status.waiting {
+  background: #5883E6;
+}
+.orders .orders_list .order_item .order .left {
+  display: flex;
+  align-items: center;
+}
+.orders .orders_list .order_item .order .left .order_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 63px;
+  height: 63px;
+  border: 1px solid #E3E4E6;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.orders .orders_list .order_item .order .left .order_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.orders .orders_list .order_item .order .left .order_desc .order_id {
+  font-family: "Yandex Sans Text";
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  opacity: 0.87;
+}
+.orders .orders_list .order_item .order .left .order_desc .order_count {
+  font-family: "Yandex Sans Text";
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #222222;
+  opacity: 0.87;
+}
+.orders .orders_list .order_item .order .left .order_desc .order_count span {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.orders .orders_list .order_item .order .left .order_desc .order_price {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  opacity: 0.87;
+}
+.orders .orders_list .order_item .order .left .order_desc .order_price span {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=orders.css.map */

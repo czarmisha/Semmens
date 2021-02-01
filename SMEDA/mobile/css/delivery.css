@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url(../fonts/YandexSansText-Regular.ttf);
+}
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: "Helvetica Regular";
+  src: url(../fonts/Helvetica/Helvetica.ttf);
+}
+.delivery {
+  position: relative;
+  padding: 30px 0;
+}
+.delivery .page_title {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.delivery .page_title .left {
+  position: absolute;
+  left: 16px;
+}
+.delivery .page_title .left a {
+  width: 14px;
+  height: 24px;
+}
+.delivery .page_title .center h1 {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #222222;
+  opacity: 0.87;
+}
+.delivery .page_title .right {
+  position: absolute;
+  right: 16px;
+  display: flex;
+  align-items: center;
+}
+.delivery .page_title .right .chat {
+  margin-right: 14px;
+}
+.delivery .tabs {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+.delivery .tabs .tab_togglers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: rgba(118, 118, 128, 0.12);
+  border-radius: 6px;
+  padding: 2px;
+  margin-bottom: 24px;
+  transition: 0.4s;
+}
+.delivery .tabs .tab_togglers .tab_toggler {
+  transition: 0.4s;
+  border-radius: 6px;
+  width: 50%;
+  text-align: center;
+  display: block;
+  padding: 9px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #222222;
+}
+.delivery .tabs .tab_togglers .tab_toggler.active {
+  background: #FFDA34;
+}
+.delivery .tabs .tab_contents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: 0.4s;
+}
+.delivery .tabs .tab_contents .tab_content {
+  width: 100%;
+  transition: 0.4s;
+  transform: scale(0);
+  height: 0;
+}
+.delivery .tabs .tab_contents .tab_content.active {
+  transform: scale(1);
+  height: auto;
+}
+.delivery .tabs .tab_contents .tab_content .box {
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.delivery .tabs .tab_contents .tab_content .box .title {
+  margin-bottom: 5px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(34, 34, 34, 0.87);
+}
+.delivery .tabs .tab_contents .tab_content .box .option_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.87);
+  padding: 10px 0;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(34, 34, 34, 0.5);
+}
+.delivery .tabs .tab_contents .tab_content .box .option_1 .price {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: right;
+  color: rgba(34, 34, 34, 0.4);
+}
+.delivery .tabs .tab_contents .tab_content .box .option_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(34, 34, 34, 0.5);
+}
+.delivery .tabs .tab_contents .tab_content .box .option_2 .price {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: right;
+  color: rgba(34, 34, 34, 0.4);
+  text-transform: uppercase;
+}
+.delivery .pickup {
+  padding: 0 16px;
+}
+.delivery .pickup .box {
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.delivery .pickup .box .title {
+  margin-bottom: 5px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(34, 34, 34, 0.87);
+}
+.delivery .pickup .box .option_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(34, 34, 34, 0.5);
+}
+.delivery .pickup .box .option_1 .price {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: right;
+  color: rgba(34, 34, 34, 0.4);
+  text-transform: uppercase;
+}
+.delivery .slasher {
+  width: 100%;
+  background: #F4F4F4;
+  height: 12px;
+  margin-bottom: 20px;
+}
+.delivery .delivery_terms {
+  padding: 0 16px 20px;
+}
+.delivery .delivery_terms .title {
+  margin-bottom: 10px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(34, 34, 34, 0.87);
+}
+.delivery .delivery_terms .terms {
+  display: flex;
+  flex-direction: column;
+}
+.delivery .delivery_terms .terms .term {
+  padding-left: 17px;
+  margin-bottom: 17px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(34, 34, 34, 0.87);
+  opacity: 0.6;
+  position: relative;
+}
+.delivery .delivery_terms .terms .term::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  background: #C4C4C4;
+  opacity: 0.5;
+}
+.delivery .privelege {
+  padding: 0 16px;
+}
+.delivery .privelege .title {
+  margin-bottom: 10px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(34, 34, 34, 0.87);
+}
+.delivery .privelege .text {
+  margin-bottom: 10px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(34, 34, 34, 0.87);
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=delivery.css.map */

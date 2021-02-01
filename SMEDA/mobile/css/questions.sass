@@ -1,0 +1,210 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Yandex Sans Text'
+    src: url(../fonts/YandexSansText-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Bold'
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf)
+
+@font-face
+    font-family: 'Helvetica Regular'
+    src: url(../fonts/Helvetica/Helvetica.ttf)
+
+$H_bold: 'Helvetica Bold'
+$H_reg: 'Helvetica Regular'
+$Yand: 'Yandex Sans Text'
+
+.questions
+    position: relative
+    padding: 30px 16px
+    .page_title
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        width: 100%
+        margin-bottom: 20px
+        .left
+            position: absolute
+            left: 0
+            a
+                width: 14px
+                height: 24px
+        .center
+            h1
+                font-family: $Yand
+                font-style: normal
+                font-weight: bold
+                font-size: 20px
+                line-height: 25px
+                text-align: center
+                color: #222222
+                opacity: 0.87
+        .right
+            position: absolute
+            right: 0
+            display: flex
+            align-items: center
+            .chat
+                margin-right: 14px
+    .search
+        margin: 10px 0
+        width: 100%
+    .search__form
+        width: 100%
+    .search__wrapper
+        width: 100%
+        position: relative
+        &::before
+            position: absolute
+            left: 10px
+            top: 8px
+            content: ''
+            background: url('../images/search.png') no-repeat center center
+            display: block
+            width: 20px
+            height: 20px
+            z-index: 2
+    .search__input
+        width: 100%
+        padding: 11px 11px 11px 38px
+        background: #F4F4F4
+        border: none
+        border-radius: 3px
+        &:focus
+            outline: none
+        &::placeholder
+            font-family: 'Yandex Sans Text'
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: -0.3px
+            color: #222222
+            opacity: 0.35
+    .questions_list
+        display: flex
+        flex-direction: column
+        .item
+            padding: 15px 0
+            border-bottom: 1px solid rgba(62, 74, 94, 0.15)
+            .link
+                display: flex
+                flex-direction: column
+                .title
+                    margin-bottom: 1px
+                    font-family: $Yand
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 16px
+                    line-height: 20px
+                    color: rgba(34, 34, 34, 0.87)
+                .text
+                    font-family: $Yand
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 13px
+                    line-height: 20px
+                    color: rgba(34, 34, 34, 0.5)
+    .ask_question
+        width: 100%
+        display: block
+        padding: 19px
+        background: #FFDA34
+        border-radius: 6px
+        font-family: $Yand
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        color: #222222
+        opacity: 0.87
+        margin-top: 15px
+.ask_question_popup   // popup question form
+    position: absolute
+    height: 100vh
+    width: 100%
+    display: flex
+    align-items: flex-end
+    background: #222222de
+    transform: translateY(-230%)
+    transition: .7s
+    .wrapper
+        width: 100%
+        background: #ffffff
+        border-top-left-radius: 14px
+        border-top-right-radius: 14px
+        padding: 20px 19px 25px
+        position: relative
+        .close_popup
+            position: absolute
+            top: 20px
+            right: 20px
+            width: 18px
+            height: 18px
+            display: block
+            z-index: 22
+        .question_form
+            .title
+                width: 100%
+                text-align: center
+                margin-bottom: 25px
+                font-family: $Yand
+                font-style: normal
+                font-weight: bold
+                font-size: 20px
+                line-height: 25px
+                text-align: center
+                color: #222222
+                opacity: 0.87
+            input
+                width: 100%
+                margin-bottom: 15px
+                background: #F4F4F4
+                border-radius: 4px
+                font-family: $Yand
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 17px
+                color: rgba(34, 34, 34, 0.5)
+                border: none
+                padding: 13px 17px
+            textarea
+                resize: none
+                padding: 13px 17px
+                width: 100%
+                margin-bottom: 15px
+                background: #F4F4F4
+                border-radius: 4px
+                font-family: $Yand
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 17px
+                color: rgba(34, 34, 34, 0.5)
+                min-height: 220px
+                border: none
+            button
+                border: none
+                background: #FFDA34
+                border-radius: 6px
+                width: 100%
+                display: block
+                padding: 19px
+                text-align: center
+                font-family: $Yand
+                font-style: normal
+                font-weight: bold
+                font-size: 18px
+                line-height: 22px
+                text-align: center
+                color: rgba(34, 34, 34, 0.87)

@@ -1,0 +1,194 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Yandex Sans Text'
+    src: url(../fonts/YandexSansText-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Bold'
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf)
+
+@font-face
+    font-family: 'Helvetica Regular'
+    src: url(../fonts/Helvetica/Helvetica.ttf)
+
+$H_bold: 'Helvetica Bold'
+$H_reg: 'Helvetica Regular'
+$Yand: 'Yandex Sans Text'
+
+.orders
+    padding: 30px 16px
+    .page_title
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        width: 100%
+        margin-bottom: 20px
+        .left
+            position: absolute
+            left: 0
+            a
+                width: 14px
+                height: 24px
+        .center
+            h1
+                font-family: $Yand
+                font-style: normal
+                font-weight: bold
+                font-size: 20px
+                line-height: 25px
+                text-align: center
+                color: #222222
+                opacity: 0.87
+        .right
+            position: absolute
+            right: 0
+            display: flex
+            align-items: center
+            .chat
+                margin-right: 14px
+    .search
+        margin: 10px 0
+        width: 100%
+    .search__form
+        width: 100%
+    .search__wrapper
+        width: 100%
+        position: relative
+        &::before
+            position: absolute
+            left: 10px
+            top: 8px
+            content: ''
+            background: url('../images/search.png') no-repeat center center
+            display: block
+            width: 20px
+            height: 20px
+            z-index: 2
+    .search__input
+        width: 100%
+        padding: 11px 11px 11px 38px
+        background: #F4F4F4
+        border: none
+        border-radius: 3px
+        &:focus
+            outline: none
+        &::placeholder
+            font-family: 'Yandex Sans Text'
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: -0.3px
+            color: #222222
+            opacity: 0.35
+    .orders_list
+        display: flex
+        flex-direction: column
+        width: 100%
+        .order_item
+            position: relative
+            width: 100%
+            padding: 14px 30px 14px 0
+            border-bottom: 1px solid #EEEEEE
+            &::after
+                content: ''
+                display: block
+                width: 8px
+                height: 14px
+                background: url('../images/arrow_right.png')no-repeat center center
+                position: absolute
+                right: 0
+                top: 46%
+            &:last-child
+                border: none
+            .order
+                display: flex
+                justify-content: space-between
+                .right
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    align-items: flex-end
+                    .order_time_date
+                        font-family: $Yand
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 12px
+                        line-height: 15px
+                        text-align: right
+                        color: #222222
+                        opacity: 0.87
+                    .order_status
+                        padding: 7px 10px
+                        border-radius: 14px
+                        font-family: $Yand
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 12px
+                        line-height: 15px
+                        color: #FFFFFF
+                        opacity: 0.87
+                        &.delivered
+                            background: #5FBA8F
+                        &.canceled
+                            background: #DD5959
+                        &.on_way
+                            background: #E8C189
+                        &.waiting
+                            background: #5883E6
+                .left
+                    display: flex
+                    align-items: center
+                    .order_img
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        width: 63px
+                        height: 63px
+                        border: 1px solid #E3E4E6
+                        border-radius: 5px
+                        margin-right: 15px
+                    .order_desc
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-between
+                        .order_id
+                            font-family: $Yand
+                            margin-bottom: 5px
+                            font-style: normal
+                            font-weight: bold
+                            font-size: 16px
+                            line-height: 20px
+                            color: #222222
+                            opacity: 0.87
+                        .order_count
+                            font-family: $Yand
+                            margin-bottom: 5px
+                            font-style: normal
+                            font-weight: bold
+                            font-size: 12px
+                            line-height: 15px
+                            color: #222222
+                            opacity: 0.87
+                            span
+                                font-weight: bold
+                                font-size: 16px
+                                line-height: 20px
+                        .order_price
+                            font-family: $Yand
+                            font-style: normal
+                            font-weight: bold
+                            font-size: 16px
+                            line-height: 20px
+                            color: #222222
+                            opacity: 0.87
+                            span
+                                font-weight: normal
+                                font-size: 15px

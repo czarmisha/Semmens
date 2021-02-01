@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url(../fonts/YandexSansText-Regular.ttf);
+}
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: "Helvetica Regular";
+  src: url(../fonts/Helvetica/Helvetica.ttf);
+}
+.order_detail {
+  padding: 30px 16px;
+}
+.order_detail .page_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.order_detail .page_title .left {
+  position: absolute;
+  left: 0;
+}
+.order_detail .page_title .left a {
+  width: 14px;
+  height: 24px;
+}
+.order_detail .page_title .center h1 {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #222222;
+  opacity: 0.87;
+}
+.order_detail .page_title .right {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.order_detail .page_title .right .chat {
+  margin-right: 14px;
+}
+.order_detail .order_delivery {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #eee;
+}
+.order_detail .order_delivery .order_address {
+  max-width: 266px;
+  margin-bottom: 9px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #222222;
+  opacity: 0.87;
+}
+.order_detail .order_delivery .order_time_date {
+  max-width: 266px;
+  margin-bottom: 9px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #222222;
+  opacity: 0.87;
+}
+.order_detail .order_delivery .order_status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 10px;
+  border-radius: 14px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.87;
+}
+.order_detail .order_delivery .order_status.delivered {
+  background: #5FBA8F;
+}
+.order_detail .order_delivery .order_status.canceled {
+  background: #DD5959;
+}
+.order_detail .order_delivery .order_status.on_way {
+  background: #E8C189;
+}
+.order_detail .order_delivery .order_status.waiting {
+  background: #5883E6;
+}
+.order_detail .order_box {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+}
+.order_detail .order_box .order_img {
+  border: 1px solid #F4F4F4;
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.order_detail .order_box .order_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.order_detail .order_box .order_text .order_name {
+  margin-bottom: 2px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  opacity: 0.87;
+}
+.order_detail .order_box .order_text .order_desc {
+  margin-bottom: 5px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #787878;
+}
+.order_detail .order_box .order_text .order_desc_2 {
+  margin-bottom: 9px;
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #222222;
+  opacity: 0.87;
+  letter-spacing: -0.3px;
+}
+.order_detail .order_box .order_text .order_price {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #222222;
+  opacity: 0.87;
+  margin-bottom: 8px;
+}
+.order_detail .order_calculation {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.order_detail .order_calculation .item {
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.order_detail .order_calculation .item .title {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+  opacity: 0.87;
+}
+.order_detail .order_calculation .item .price {
+  font-family: "Yandex Sans Text";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+  opacity: 0.87;
+}
+
+/*# sourceMappingURL=order_detail.css.map */

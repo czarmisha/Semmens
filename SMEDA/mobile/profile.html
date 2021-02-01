@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <main>
+        <div class="profile">
+            <div class="page_title">Профиль</div>
+            <ul class="menu">
+                <li class="item">
+                    <a href="" class="link">
+                        <div class="left">
+                            <img src="images/location.png" alt="">
+                            <span>Город</span>
+                        </div>
+                        <div class="right">
+                            <span>Ташкент</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">
+                        <div class="left">
+                            <img src="images/location.png" alt="">
+                            <span>Мои заказы</span>
+                        </div>
+                        <div class="right">
+                            <span>1</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="item witout_arrow">
+                    <span class="link">
+                        <div class="left">
+                            <img src="images/location.png" alt="">
+                            <span>Уведомления</span>
+                        </div>
+                        <div class="right">
+                            <span class="switcher on">
+                                <span class="toddler"></span>
+                            </span>
+                        </div>
+                    </span>
+                </li>
+                <li class="item">
+                    <a href="" class="link">
+                        <div class="left">
+                            <img src="images/location.png" alt="">
+                            <span>Мои заказы</span>
+                        </div>
+                        <div class="right">
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">
+                        <div class="left">
+                            <img src="images/location.png" alt="">
+                            <span>Мои заказы</span>
+                        </div>
+                        <div class="right">
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">
+                        <div class="left">
+                            <img src="images/location.png" alt="">
+                            <span>Мои заказы</span>
+                        </div>
+                        <div class="right">
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">
+                        <div class="left">
+                            <img src="images/location.png" alt="">
+                            <span>Мои заказы</span>
+                        </div>
+                        <div class="right">
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">
+                        <div class="left">
+                            <img src="images/location.png" alt="">
+                            <span>Мои заказы</span>
+                        </div>
+                        <div class="right">
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="separator"></div>
+        <div class="support">
+            <h2 class="title">Поддержка</h2>
+            <p class="text">Дайте нам знать, есть ли у вас возникли проблемы
+                с нашим сервисом</p>
+            <div class="btns">
+                <a href="" class="chat"><img src="images/chat.png" alt=""> Онлайн чат</a>
+                <a href="" class="contacts"><img src="images/phone.png" alt=""> Контакты</a>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        const switcher = document.querySelector('.profile .menu .switcher');
+        const toddler = switcher.querySelector('.toddler');
+        switcher.addEventListener('click', function (e) {
+            e.preventDefault();
+            this.classList.toggle('on');
+        });
+    </script>
+</body>
+</html>

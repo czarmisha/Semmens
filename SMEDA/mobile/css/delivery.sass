@@ -1,0 +1,247 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Yandex Sans Text'
+    src: url(../fonts/YandexSansText-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Bold'
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf)
+
+@font-face
+    font-family: 'Helvetica Regular'
+    src: url(../fonts/Helvetica/Helvetica.ttf)
+
+$H_bold: 'Helvetica Bold'
+$H_reg: 'Helvetica Regular'
+$Yand: 'Yandex Sans Text'
+
+.delivery
+    position: relative
+    padding: 30px 0
+    .page_title
+        padding: 0 16px
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        width: 100%
+        margin-bottom: 20px
+        .left
+            position: absolute
+            left: 16px
+            a
+                width: 14px
+                height: 24px
+        .center
+            h1
+                font-family: $Yand
+                font-style: normal
+                font-weight: bold
+                font-size: 20px
+                line-height: 25px
+                text-align: center
+                color: #222222
+                opacity: 0.87
+        .right
+            position: absolute
+            right: 16px
+            display: flex
+            align-items: center
+            .chat
+                margin-right: 14px
+    .tabs
+        padding: 0 16px
+        display: flex
+        flex-direction: column
+        .tab_togglers
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            background: rgba(118, 118, 128, 0.12)
+            border-radius: 6px
+            padding: 2px
+            margin-bottom: 24px
+            transition: .4s
+            .tab_toggler
+                transition: .4s
+                border-radius: 6px
+                width: 50%
+                text-align: center
+                display: block
+                padding: 9px
+                font-family: $Yand
+                font-style: normal
+                font-weight: bold
+                font-size: 13px
+                line-height: 18px
+                text-align: center
+                color: #222222
+                &.active
+                    background: #FFDA34
+        .tab_contents
+            display: flex
+            flex-direction: column
+            width: 100%
+            transition: .4s
+            .tab_content
+                width: 100%
+                transition: .4s
+                transform: scale(0)
+                height: 0
+                &.active
+                    transform: scale(1)
+                    height: auto
+                .box
+                    transition: .4s
+                    display: flex
+                    flex-direction: column
+                    margin-bottom: 20px
+                    .title
+                        margin-bottom: 5px
+                        font-family: $Yand
+                        font-style: normal
+                        font-weight: bold
+                        font-size: 18px
+                        line-height: 22px
+                        color: rgba(34, 34, 34, 0.87)
+                    .option_1
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        border-bottom: 1px solid rgba(34, 34, 34, 0.87)
+                        padding: 10px 0
+                        font-family: $Yand
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 13px
+                        line-height: 20px
+                        color: rgba(34, 34, 34, 0.5)
+                        .price
+                            font-family: $Yand
+                            font-style: normal
+                            font-weight: bold
+                            font-size: 13px
+                            line-height: 20px
+                            text-align: right
+                            color: rgba(34, 34, 34, 0.4)
+                    .option_2
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        padding: 10px 0
+                        font-family: $Yand
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 13px
+                        line-height: 20px
+                        color: rgba(34, 34, 34, 0.5)
+                        .price
+                            font-family: $Yand
+                            font-style: normal
+                            font-weight: bold
+                            font-size: 13px
+                            line-height: 20px
+                            text-align: right
+                            color: rgba(34, 34, 34, 0.4)
+                            text-transform: uppercase
+    .pickup
+        padding: 0 16px
+        .box
+            transition: .4s
+            display: flex
+            flex-direction: column
+            margin-bottom: 20px
+            .title
+                margin-bottom: 5px
+                font-family: $Yand
+                font-style: normal
+                font-weight: bold
+                font-size: 18px
+                line-height: 22px
+                color: rgba(34, 34, 34, 0.87)
+            .option_1
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 10px 0
+                font-family: $Yand
+                font-style: normal
+                font-weight: normal
+                font-size: 13px
+                line-height: 20px
+                color: rgba(34, 34, 34, 0.5)
+                .price
+                    font-family: $Yand
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 13px
+                    line-height: 20px
+                    text-align: right
+                    color: rgba(34, 34, 34, 0.4)
+                    text-transform: uppercase
+    .slasher
+        width: 100%
+        background: #F4F4F4
+        height: 12px
+        margin-bottom: 20px
+    .delivery_terms
+        padding: 0 16px 20px
+        .title
+            margin-bottom: 10px
+            font-family: $Yand
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 22px
+            color: rgba(34, 34, 34, 0.87)
+        .terms
+            display: flex
+            flex-direction: column
+            .term
+                padding-left: 17px
+                margin-bottom: 17px
+                font-family: $Yand
+                font-style: normal
+                font-weight: normal
+                font-size: 13px
+                line-height: 20px
+                color: rgba(34, 34, 34, 0.87)
+                opacity: 0.6
+                position: relative
+                &::before
+                    content: ''
+                    display: block
+                    width: 7px
+                    height: 7px
+                    border-radius: 50%
+                    position: absolute
+                    left: 0
+                    top: 5px
+                    background: #C4C4C4
+                    opacity: 0.5
+    .privelege
+        padding: 0 16px
+        .title
+            margin-bottom: 10px
+            font-family: $Yand
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 22px
+            color: rgba(34, 34, 34, 0.87)
+        .text
+            margin-bottom: 10px
+            font-family: $Yand
+            font-style: normal
+            font-weight: normal
+            font-size: 13px
+            line-height: 20px
+            color: rgba(34, 34, 34, 0.87)
+            opacity: 0.6

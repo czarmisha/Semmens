@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/delivery.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="delivery">
+        <div class="page_title">
+            <div class="left"><a href=""><img src="images/arrow_left_big.png" alt=""></a></div>
+            <div class="center"><h1 class="title">Доставка 24/7</h1></div>
+            <div class="right">
+                <a href="" class="chat"><img src="images/chat.png" alt=""></a>
+                <a href="" class="call"><img src="images/phone.png" alt=""></a>
+            </div>
+        </div>
+        <div class="tabs">
+            <div class="tab_togglers">
+                <a href="" class="tab_toggler active">Ташкент</a>
+                <a href="" class="tab_toggler">Таш. Область</a>
+            </div>
+            <div class="tab_contents">
+                <div class="tab_content active">
+                    <div class="box">
+                        <h3 class="title">в Ташкенте</h3>
+                        <p class="option_1">
+                            Заказ до 15 000 сум
+                            <span class="price">5 000 сум</span>
+                        </p>
+                        <p class="option_2">
+                            Заказ выше 15 000 сум
+                            <span class="price">бесплатно</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="tab_content">
+                    <div class="box">
+                        <h3 class="title">Чирчик</h3>
+                        <p class="option_1">
+                            Заказ до 15 000 сум
+                            <span class="price">5 000 сум</span>
+                        </p>
+                        <p class="option_2">
+                            Заказ выше 15 000 сум
+                            <span class="price">бесплатно</span>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h3 class="title">Кибрай</h3>
+                        <p class="option_1">
+                            Заказ до 15 000 сум
+                            <span class="price">5 000 сум</span>
+                        </p>
+                        <p class="option_2">
+                            Заказ выше 15 000 сум
+                            <span class="price">бесплатно</span>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h3 class="title">Алмалык</h3>
+                        <p class="option_1">
+                            Заказ до 15 000 сум
+                            <span class="price">5 000 сум</span>
+                        </p>
+                        <p class="option_2">
+                            Заказ выше 15 000 сум
+                            <span class="price">бесплатно</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slasher"></div>
+        <div class="pickup">
+            <div class="box">
+                <h3 class="title">Самовывоз</h3>
+                <p class="option_1">
+                    из 503 аптек
+                    <span class="price">бесплатно</span>
+                </p>
+            </div>
+        </div>
+        <div class="slasher"></div>
+        <div class="delivery_terms">
+            <h3 class="title">Условия доставки</h3>
+            <ul class="terms">
+                <li class="term">Доставка заказов по Москве осуществляется без выходных дней.</li>
+                <li class="term">Доставка заказов по Москве осуществляется без выходных дней.</li>
+                <li class="term">Доставка заказов по Москве осуществляется без выходных дней.</li>
+            </ul>
+        </div>
+        <div class="slasher"></div>
+        <div class="privelege">
+            <h3 class="title">Доставка льготной категории граждан</h3>
+            <p class="text">Доставка лекарств осуществляется только для льготной категории граждан на основании ст. 2 Федерального закона РФ от 09.01.1997 N 5-ФЗ «О предоставлении социальных гарантий героям социалистического труда и полным кавалерам ордена трудовой славы» (в ред. от 02.07.2013) и ст 1.1 Закона РФ от 15.01.1993 N 4301-1 «О статусе Героев Советского Союза, Героев Российской Федерации и полных кавалеров Ордена Славы»</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        const togglers = document.querySelectorAll('.tab_toggler');
+        const contents = document.querySelectorAll('.tab_content');
+
+        for (let i = 0; i < togglers.length; i++) {
+            const el = togglers[i];
+            el.addEventListener('click', function (e) {
+                e.preventDefault();
+                for (let j = 0; j < togglers.length; j++) {
+                    const element = togglers[j];
+                    element.classList.remove('active');
+                    contents[j].classList.remove('active');
+                }
+                this.classList.add('active');
+                contents[i].classList.add('active');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Yandex Sans Text'
+    src: url(../fonts/YandexSansText-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Bold'
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf)
+
+@font-face
+    font-family: 'Helvetica Regular'
+    src: url(../fonts/Helvetica/Helvetica.ttf)
+
+$H_bold: 'Helvetica Bold'
+$H_reg: 'Helvetica Regular'
+$Yand: 'Yandex Sans Text'
+
+.city
+    padding: 30px 16px
+    .page_title
+        position: relative
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 30px
+        .title
+            width: 100%
+            text-align: center
+            font-family: $Yand
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 25px
+            text-align: center
+            color: #222222
+            opacity: 0.87
+        a
+            position: absolute
+            left: 0
+            top: 2px
+            width: 14px
+            height: 24px
+            display: block
+    .cities
+        display: flex
+        flex-direction: column
+        .item
+            width: 100%
+            position: relative
+            padding: 17px 0
+            display: flex
+            align-items: center
+            border-bottom: 1px solid #EEEEEE
+            &:last-child
+                border: none
+            .link
+                font-family: $Yand
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 20px
+                color: #222222
+                opacity: 0.87
+                width: 100%
+                height: 100%
+            &.selected
+                .link
+                    font-weight: bold
+                &::after
+                    content: ''
+                    position: absolute
+                    right: 0
+                    display: block
+                    width: 18px
+                    height: 18px
+                    background: url('../images/selected.png')no-repeat center center

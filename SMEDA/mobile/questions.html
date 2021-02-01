@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/questions.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="questions">
+        <div class="page_title">
+            <div class="left"><a href=""><img src="images/arrow_left_big.png" alt=""></a></div>
+            <div class="center"><h1 class="title">Ответы и вопросы</h1></div>
+            <div class="right">
+                <a href="" class="chat"><img src="images/chat.png" alt=""></a>
+                <a href="" class="call"><img src="images/phone.png" alt=""></a>
+            </div>
+        </div>
+        <div class="search">
+            <form action="" method="GET" class="search__form">
+                <div class="search__wrapper">
+                    <input type="text" class="search__input" placeholder="Введите ключевое слово">
+                </div>
+            </form>
+        </div>
+        <ul class="questions_list">
+            <li class="item">
+                <a href="" class="link">
+                    <h3 class="title">Почему я не могу зарегистрироваться</h3>
+                    <p class="text">Такое иногда бывает, особенно в старых версиях браузера Internet Explorer при определённом стечении обстоятельств. Если вы пробовали...</p>
+                </a>
+            </li>
+            <li class="item">
+                <a href="" class="link">
+                    <h3 class="title">Почему я не могу зарегистрироваться</h3>
+                    <p class="text">Такое иногда бывает, особенно в старых версиях браузера Internet Explorer при определённом стечении обстоятельств. Если вы пробовали...</p>
+                </a>
+            </li>
+            <li class="item">
+                <a href="" class="link">
+                    <h3 class="title">Почему я не могу зарегистрироваться</h3>
+                    <p class="text">Такое иногда бывает, особенно в старых версиях браузера Internet Explorer при определённом стечении обстоятельств. Если вы пробовали...</p>
+                </a>
+            </li>
+            <li class="item">
+                <a href="" class="link">
+                    <h3 class="title">Почему я не могу зарегистрироваться</h3>
+                    <p class="text">Такое иногда бывает, особенно в старых версиях браузера Internet Explorer при определённом стечении обстоятельств. Если вы пробовали...</p>
+                </a>
+            </li>
+            <li class="item">
+                <a href="" class="link">
+                    <h3 class="title">Почему я не могу зарегистрироваться</h3>
+                    <p class="text">Такое иногда бывает, особенно в старых версиях браузера Internet Explorer при определённом стечении обстоятельств. Если вы пробовали...</p>
+                </a>
+            </li>
+            <li class="item">
+                <a href="" class="link">
+                    <h3 class="title">Почему я не могу зарегистрироваться</h3>
+                    <p class="text">Такое иногда бывает, особенно в старых версиях браузера Internet Explorer при определённом стечении обстоятельств. Если вы пробовали...</p>
+                </a>
+            </li>
+            <li class="item">
+                <a href="" class="link">
+                    <h3 class="title">Почему я не могу зарегистрироваться</h3>
+                    <p class="text">Такое иногда бывает, особенно в старых версиях браузера Internet Explorer при определённом стечении обстоятельств. Если вы пробовали...</p>
+                </a>
+            </li>
+        </ul>
+        <a href="" class="ask_question">Задать вопрос</a>
+    </div>
+    <div class="ask_question_popup show">
+        <div class="wrapper">
+            <a href="" class="close_popup"><img src="images/close.png" alt=""></a>
+            <form action="" class="question_form">
+                <h4 class="title">Задать вопрос</h4>
+                <input type="text" name="name" id="" placeholder="Имя Отчество">
+                <input type="text" name="email" id="" placeholder="Электронная почта">
+                <textarea name="question" id="" cols="30" rows="10">Вопрос</textarea>
+                <button type="submit">Спросить</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        const popup = document.querySelector('.ask_question_popup');
+        const show_btn = document.querySelector('.ask_question');
+        const close_btn = document.querySelector('.close_popup');
+        const form = document.querySelector('.question_form');
+        show_btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            popup.style.top = `${window.scrollY}px`;
+            popup.style.transform = `translateY(0%)`;
+            document.body.style.overflow = 'hidden';
+        });
+        close_btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            popup.style.transform = `translateY(-230%)`;
+            document.body.style.overflow = 'unset'
+        });
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            popup.style.transform = `translateY(-230%)`;
+            document.body.style.overflow = 'unset';
+            this.submit();
+        });
+    </script>
+</body>
+</html>

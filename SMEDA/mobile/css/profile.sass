@@ -1,0 +1,152 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Yandex Sans Text'
+    src: url(../fonts/YandexSansText-Regular.ttf)
+
+@font-face
+    font-family: 'Helvetica Bold'
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf)
+
+@font-face
+    font-family: 'Helvetica Regular'
+    src: url(../fonts/Helvetica/Helvetica.ttf)
+
+$H_bold: 'Helvetica Bold'
+$H_reg: 'Helvetica Regular'
+$Yand: 'Yandex Sans Text'
+
+// ---------------- profile menu
+.profile
+    padding: 0 16px
+    .page_title
+        margin: 30px 0
+        width: 100%
+        text-align: center
+        font-family: $Yand
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 25px
+        text-align: center
+        color: #222222
+        opacity: 0.87
+    .menu
+        display: flex
+        flex-direction: column
+        .item
+            padding: 15px 25px 15px 0
+            width: 100%
+            border-bottom: 1px solid #EEEEEE
+            position: relative
+            &::after
+                content: ''
+                display: block
+                width: 8px
+                height: 14px
+                position: absolute
+                right: 0
+                top: 19px
+                background: url('../images/arrow_right.png')no-repeat center center
+            &.witout_arrow
+                &::after
+                    width: 0
+                    height: 0
+                    opacity: 0
+            &:last-child
+                border: none
+            .link
+                display: flex
+                align-items: center
+                justify-content: space-between
+                width: 100%
+                .left
+                    span
+                        margin-left: 18px
+                        font-family: $Yand
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 15px
+                        line-height: 19px
+                        color: #222222
+                .right
+                    span
+                        font-family: $Yand
+                        font-style: normal
+                        font-weight: 300
+                        font-size: 15px
+                        line-height: 14px
+                        color: rgba(34, 34, 34, 0.5)
+                    .switcher
+                        display: flex
+                        align-items: center
+                        padding: 2px
+                        justify-content: flex-start
+                        width: 51px
+                        height: 31px
+                        background: rgba(34, 34, 34, 0.5)
+                        position: relative
+                        border-radius: 14px
+                        transition: .4s
+                        margin-right: -25px
+                        &.on
+                            background: #FFDA34
+                            .toddler
+                                transform: translateX(75%)
+                        .toddler
+                            transition: .4s
+                            position: absolute
+                            transform: translateX(0%)
+                            width: 27px
+                            height: 27px
+                            border-radius: 50%
+                            background: white
+
+.separator
+    width: 100%
+    height: 12px
+    background: #F4F4F4
+
+.support
+    padding: 25px 16px
+    .title
+        font-family: $Yand
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 25px
+        color: #222222
+        opacity: 0.87
+        margin-bottom: 6px
+    .text
+        margin-bottom: 15px
+        font-family: $Yand
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #222222
+        opacity: 0.5
+    .btns
+        display: flex
+        align-items: center
+        .chat, .contacts
+            display: flex
+            padding: 9px 11px
+            background: #F4F4F4
+            border-radius: 4px
+            margin-right: 10px
+            font-family: $Yand
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 17px
+            color: #222222
+            opacity: 0.87
+            img
+                margin-right: 18px
