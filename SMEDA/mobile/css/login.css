@@ -22,7 +22,7 @@
   padding: 20px 16px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 97vh;
 }
 .login .page_title {
   width: 100%;
