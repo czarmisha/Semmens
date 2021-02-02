@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ordering.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ordering">
+        <a href="" class="close"><img src="images/close.png" alt=""></a>
+        <h1 class="page_title">Оформление заказа</h1>
+        <form action="" class="ordering_form">
+            <div class="wrapper">
+                <h3 class="title">Получить заказ</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11984.008160154168!2d69.25198194999999!3d41.330569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1612243151945!5m2!1sru!2s" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <input type="text" placeholder="Ташкент">
+                <div class="input_row">
+                    <input type="text" placeholder="Улица">
+                    <input type="text" placeholder="Дом">
+                </div>
+                <div class="input_row_2">
+                    <input type="text" placeholder="Удобное время">
+                    <div class="custom_select active">
+                        <div class="select">
+                            <img src="images/aroorw_roght_dark.png" alt="">
+                            <span class="title">Обуыная доставка <br> <span class="comm">в течении дня</span></span>
+                            <i class="fa fa-chevron-left"></i>
+                        </div>
+                        <input type="hidden" name="w">
+                        <ul class="custom_select-menu">
+                            <li id="1"><span class="title">Обуыная доставка <br> <span class="comm">в течении дня</span></span></li>
+                            <li id="2"><span class="title">Обуыная доставка <br> <span class="comm">в течении дня</span></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="comment">Дату, время и стоимость доставки сообщит оператор при подтверждении заказа по телефону</p>
+                <textarea name="" id="" cols="30" rows="10">Добавить комментарий к заказу</textarea>
+                <input type="text" placeholder="Имя Отчество">
+                <input type="text" placeholder="Электронная почта">
+                <input type="text" placeholder="Мобильный телефон">
+                <div class="custom_select_2">
+                    <div class="select">
+                        <img src="images/aroorw_roght_dark.png" alt="">
+                        <span>Банковской картой</span>
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <input type="hidden" name="gender">
+                    <ul class="custom_select-menu">
+                        <li id="female">Наличными</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slasher"></div>
+            <div class="wrapper">
+                <h3 class="block_title">Получить заказ</h3>
+                <div class="togglers">
+                    <a href="" class="toggler active">Заказать доставку</a>
+                    <a href="" class="toggler">Заказать в оптеке</a>
+                </div>
+            </div>
+            <div class="slasher"></div>
+            <div class="wrapper">
+                <h3 class="block_title">Подтверждение заказа</h3>
+                <div class="order_info">
+                    <span class="text">Сумма за товар</span>
+                    <span class="price">545 000 сум</span>
+                </div>
+            </div>
+            <div class="slasher"></div>
+            <div class="wrapper">
+                <button type="submit">Подтвердить заказ</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script>
+        /*Dropdown Menu*/
+        $('.custom_select').click(function () {
+                $(this).attr('tabindex', 1).focus();
+                $(this).toggleClass('active');
+                $(this).find('.custom_select-menu').slideToggle(300);
+            });
+            $('.custom_select').focusout(function () {
+                $(this).removeClass('active');
+                $(this).find('.custom_select-menu').slideUp(300);
+            });
+            $('.custom_select .custom_select-menu li').click(function () {
+                $(this).parents('.custom_select').find('span').html($(this).html());
+                $(this).parents('.custom_select').find('input').attr('value', $(this).attr('id'));
+            });
+        /*End custom_select Menu*/
+
+
+        $('.custom_select-menu li').click(function () {
+        var input = '<strong>' + $(this).parents('.custom_select').find('input').val() + '</strong>',
+            msg = '<span class="msg">Hidden input value: ';
+        $('.msg').html(msg + input + '</span>');
+        }); 
+    </script>
+    <script>
+        /*Dropdown Menu*/
+        $('.custom_select_2').click(function () {
+                $(this).attr('tabindex', 1).focus();
+                $(this).toggleClass('active');
+                $(this).find('.custom_select-menu').slideToggle(300);
+            });
+            $('.custom_select').focusout(function () {
+                $(this).removeClass('active');
+                $(this).find('.custom_select-menu').slideUp(300);
+            });
+            $('.custom_select .custom_select-menu li').click(function () {
+                $(this).parents('.custom_select').find('span').html($(this).html());
+                $(this).parents('.custom_select').find('input').attr('value', $(this).attr('id'));
+            });
+        /*End custom_select Menu*/
+
+
+        $('.custom_select-menu li').click(function () {
+        var input = '<strong>' + $(this).parents('.custom_select').find('input').val() + '</strong>',
+            msg = '<span class="msg">Hidden input value: ';
+        $('.msg').html(msg + input + '</span>');
+        }); 
+    </script>
+    <script>
+        const togglers = document.querySelectorAll('a.toggler');
+        for (let i = 0; i < togglers.length; i++) {
+            const el = togglers[i];
+            el.addEventListener('click', function (e) {
+                e.preventDefault();
+                for (let j = 0; j < togglers.length; j++) {
+                    const element = togglers[j];
+                    element.classList.remove('active');
+                }
+                el.classList.add('active');
+            })
+        }
+    </script>
+</body>
+</html>

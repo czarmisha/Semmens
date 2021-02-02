@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cart">
+        <h1 class="page_title">Корзина <a href="" class="clear"><img src="images/trash.png" alt=""></a></h1>
+        <div class="cart_banner">
+            <div class="box">
+                <span class="price">455 000 сум</span>
+                <span class="delivery">Ближайшая доставка: <span>Сегодня 17:00-19:00</span></span>
+                <a href="" class="info"><img src="images/info.png" alt=""></a>
+            </div>
+        </div>
+        <ul class="cart_products">
+            <li class="product">
+                <div class="product_box">
+                    <div class="like_delete">
+                        <a href="" class="like"><img src="images/like.png" alt=""></a>
+                        <a href="" class="delete"><img src="images/trash.png" alt=""></a>
+                    </div>
+                    <div class="count">
+                        <span class="decrease"></span>
+                        <p class="count_num"><span class="value">1</span> шт.</p>
+                        <span class="increase"></span>
+                    </div>
+                    <div class="product_img"><img src="images/order.png" alt=""></div>
+                    <div class="product_text">
+                        <p class="product_name">Бакистанин</p>
+                        <p class="product_desc">Капсулы, 20шт</p>
+                        <p class="product_desc_2">Крафт, Россия</p>
+                        <p class="product_price">31 000 сум</p>
+                        <p class="product_count">кол-во - <span>1</span></p>
+                    </div>
+                </div>
+            </li>
+            <li class="product">
+                <div class="product_box">
+                    <div class="like_delete">
+                        <a href="" class="like"><img src="images/like.png" alt=""></a>
+                        <a href="" class="delete"><img src="images/trash.png" alt=""></a>
+                    </div>
+                    <div class="count">
+                        <span class="decrease"></span>
+                        <p class="count_num"><span class="value">1</span> шт.</p>
+                        <span class="increase"></span>
+                    </div>
+                    <div class="product_img"><img src="images/order.png" alt=""></div>
+                    <div class="product_text">
+                        <p class="product_name">Бакистанин</p>
+                        <p class="product_desc">Капсулы, 20шт</p>
+                        <p class="product_desc_2">Крафт, Россия</p>
+                        <p class="product_price">31 000 сум</p>
+                        <p class="product_count">кол-во - <span>1</span></p>
+                    </div>
+                </div>
+            </li>
+            <li class="product">
+                <div class="product_box">
+                    <div class="like_delete">
+                        <a href="" class="like"><img src="images/like.png" alt=""></a>
+                        <a href="" class="delete"><img src="images/trash.png" alt=""></a>
+                    </div>
+                    <div class="count">
+                        <span class="decrease"></span>
+                        <p class="count_num"><span class="value">1</span> шт.</p>
+                        <span class="increase"></span>
+                    </div>
+                    <div class="product_img"><img src="images/order.png" alt=""></div>
+                    <div class="product_text">
+                        <p class="product_name">Бакистанин</p>
+                        <p class="product_desc">Капсулы, 20шт</p>
+                        <p class="product_desc_2">Крафт, Россия</p>
+                        <p class="product_price">31 000 сум</p>
+                        <p class="product_count">кол-во - <span>1</span></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="wrapper"><a href="" class="submit">Сделать заказ <span>545 000 сум</span></a></div>
+    </div>
+
+
+    <script>
+        const decrease_btns = document.querySelectorAll('.product .count .decrease');
+        const increase_btns = document.querySelectorAll('.product .count .increase');
+        for (let i = 0; i < decrease_btns.length; i++) {
+            const el = decrease_btns[i];
+            el.addEventListener('click', function (e) {
+                e.preventDefault();
+                let value = this.closest('.count').querySelector('.value');
+                value.textContent = Number(value.textContent) > 1 ? Number(value.textContent) - 1 : value.textContent;
+            })
+        }        
+        for (let i = 0; i < decrease_btns.length; i++) {
+            const el = increase_btns[i];
+            el.addEventListener('click', function (e) {
+                e.preventDefault();
+                let value = this.closest('.count').querySelector('.value');
+                value.textContent = Number(value.textContent) < 40 ? Number(value.textContent) + 1 : value.textContent;
+            })
+        }        
+    </script>
+</body>
+</html>
